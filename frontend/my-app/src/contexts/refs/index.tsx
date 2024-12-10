@@ -3,10 +3,10 @@ import {
   createContext,
   useCallback,
   useContext,
-  useRef
-} from 'react';
+  useRef,
+} from "react";
 
-interface ISectionRef extends React.RefObject<HTMLDivElement | null> {}
+type ISectionRef = React.RefObject<HTMLDivElement | null>;
 
 interface IFnUpdate {
   (ref: HTMLDivElement | null): void;
@@ -64,7 +64,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
     updateAboutSummaryRef,
     updateSectionTopHomeRef,
     updateSectionListServicesRef,
-    updateSectionTestimonialsHomeRef
+    updateSectionTestimonialsHomeRef,
   };
 
   return (
@@ -78,7 +78,7 @@ export const useScrollContext = (): ScrollContextProps => {
   const context = useContext(ScrollContext);
   if (!context) {
     throw new Error(
-      'useScrollContext deve ser usado dentro de um ScrollProvider'
+      "useScrollContext deve ser usado dentro de um ScrollProvider"
     );
   }
   return context;
