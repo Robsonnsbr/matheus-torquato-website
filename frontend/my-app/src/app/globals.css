@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* reset and initial styles project */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*  remove browser border pattern  */
+:focus {  
+ box-shadow: none !important  
+  }
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+    /* define header and footer and then calculate */
+    --height-header: 60px;
+    --height-footer: 359px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* limit application images  */
+img {
+  max-width: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  @apply flex justify-center;
+}
+
+/* utilities for tailwind */
+@layer utilities {
+
+  .global-height-header {
+    min-height: var(--height-header);
+  }
+    
+  .global-height-footer {
+    min-height: var(--height-header);
+  }
+
+  .global-height-main {
+    min-height: calc(100vh - (var(--height-header) - var(--height-footer)));
+  }
+
+  .global-section {
+    @apply w-full h-fit py-16
+  } 
+
+}
