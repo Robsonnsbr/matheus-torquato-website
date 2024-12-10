@@ -1,7 +1,6 @@
 import React from "react";
 import Main from "@/components/common/Main";
 import ContainerMedium from "@/components/common/container/ContainerMedium";
-import Title from "@/components/common/title";
 // import AboutFeaturesInfo from "@/components/about/AboutFeaturesInfo";
 // import AboutSummaryInfo from "@/components/about/AboutSummaryInfo";
 
@@ -11,8 +10,6 @@ function About() {
       <section className="global-section" id="section-about">
         <ContainerMedium>
           <div className="w-full flex flex-col">
-            <Title title="Sobre" subTitle="Monichara moccelin" />
-
             <ul className="flex flex-col gap-14">
               <li>{/* <AboutSummaryInfo /> */}</li>
               <li>{/* <AboutFeaturesInfo /> */}</li>
