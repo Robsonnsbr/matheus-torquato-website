@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { raleway, poppins, openSans } from "../font";
-import "./globals.css";
+import "./styles/globals.css";
 
 import AppProviders from "@/contexts";
 
