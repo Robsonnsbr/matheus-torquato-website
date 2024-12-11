@@ -1,8 +1,9 @@
+/* cSpell:disable */
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-frontend/my-app/node_modules
-frontend/my-app/.pnp
+frontend/node_modules
+frontend/.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -11,14 +12,14 @@ frontend/my-app/.pnp
 !.yarn/versions
 
 # testing
-frontend/my-app/coverage
+frontend/coverage
 
 # next.js
-frontend/my-app/.next/
-frontend/my-app/out/
+frontend/.next/
+frontend/out/
 
 # production
-frontend/my-app/build
+frontend/build
 
 # misc
 .DS_Store
