@@ -1,10 +1,10 @@
-import React, { ReactNode, HTMLAttributes } from 'react';
+import React, { ReactNode, HTMLAttributes } from "react";
 
-interface LayoutWrapperProps extends HTMLAttributes<HTMLDivElement> {
+interface ILayoutWrapperProps extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
 }
 
-const LayoutWrapper = ({ children, ...rest }: LayoutWrapperProps) => {
+const LayoutWrapper = ({ children, ...rest }: ILayoutWrapperProps) => {
   return (
     <div
       {...rest}

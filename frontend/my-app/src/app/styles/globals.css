@@ -18,18 +18,15 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-
+  --color-dark: #222831;
+  --color-mid-dark: #31363F;
+  --color-accent: #76ABAE;
+  --color-light: #EEEEEE;
+  --color-red: #D6002A;
+  
     /* define header and footer and then calculate */
     --height-header: 60px;
     --height-footer: 359px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 /* limit application images  */

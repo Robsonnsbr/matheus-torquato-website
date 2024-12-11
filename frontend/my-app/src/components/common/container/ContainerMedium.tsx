@@ -1,6 +1,6 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes } from "react";
 
-interface IContainerProps extends HTMLAttributes<HTMLDivElement> {}
+type IContainerProps = HTMLAttributes<HTMLDivElement>;
 
 const ContainerMedium = ({ children, className, ...rest }: IContainerProps) => {
   return (

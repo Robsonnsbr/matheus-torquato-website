@@ -6,8 +6,6 @@ import "./styles/globals.css";
 import AppProviders from "@/contexts";
 
 import LayoutWrapper from "@/components/common/container/LayoutWrapper";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Matheus Website",
@@ -26,11 +24,7 @@ export default function RootLayout({
         className={`${raleway.variable} ${poppins.variable} ${openSans.variable} font-mono bg-black`}
       >
         <AppProviders>
-          <LayoutWrapper>
-            <Header />
-            {children}
-            <Footer />
-          </LayoutWrapper>
+          <LayoutWrapper>{children}</LayoutWrapper>
         </AppProviders>
       </body>
     </html>
