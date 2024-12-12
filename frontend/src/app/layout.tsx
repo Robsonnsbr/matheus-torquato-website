@@ -6,6 +6,7 @@ import "./styles/globals.css";
 import AppProviders from "@/contexts";
 
 import LayoutWrapper from "@/components/common/container/LayoutWrapper";
+import WhatsAppButton from "@/components/common/button/btnWhats";
 
 export const metadata: Metadata = {
   title: "Matheus Website",
@@ -25,6 +26,7 @@ export default function RootLayout({
       >
         <AppProviders>
           <LayoutWrapper>{children}</LayoutWrapper>
+          <WhatsAppButton />
         </AppProviders>
       </body>
     </html>

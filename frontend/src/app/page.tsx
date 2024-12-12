@@ -14,7 +14,7 @@ export default function Home() {
         <BannerHeader />
         <TesteElemento />
         {/* <hr className="bg-light w-full p-0.5" /> */}
-        <div className="font-sans p-6 flex w-5/6 justify-between space-x-6">
+        <div className="font-sans p-6 mb-32 mt-10 flex w-5/6 justify-between space-x-6">
           {/* Tópico 1 */}
           <div className="flex-1  text-dark bg-light p-4 rounded-md shadow-md ">
             <h2 className="text-lg font-semibold mb-2">
