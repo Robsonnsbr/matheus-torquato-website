@@ -1,3 +1,4 @@
+/* cSpell:disable */
 "use client";
 import React, { useState } from "react";
 
@@ -17,7 +18,7 @@ const TestForm: React.FC = () => {
     curso: "",
   });
 
-  const [numVariables, setNumVariables] = useState(0);
+  const [numVariables, setNumVariables] = useState(7);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -51,11 +52,36 @@ const TestForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col h-full space-y-4 bg-mid-dark p-4 mb-3 font-serif rounded-md shadow-md"
+      className="flex flex-col h-full w-1/2 space-y-4 bg-light p-4 m-5 font-serif rounded-md shadow-md"
     >
+      <span className="text-center text-xl font-bold">
+        FORMULÁRIO PARA PESQUISA DE DADOS
+      </span>
       <div className="flex flex-col space-y-2">
-        <label htmlFor="nome" className="text-sm font-medium text-white">
+        <label htmlFor="nome" className="text-sm font-medium text-dark">
           Nome
+        </label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          value={formData.nome}
+          onChange={handleChange}
+          className="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+        <label htmlFor="instituicao" className="text-sm font-medium text-dark">
+          Instituição
+        </label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          value={formData.nome}
+          onChange={handleChange}
+          className="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        />
+        <label htmlFor="email" className="text-sm font-medium text-dark">
+          email
         </label>
         <input
           type="text"
@@ -67,9 +93,8 @@ const TestForm: React.FC = () => {
         />
       </div>
       {/* ... outros campos (endereco, faculdade, curso) com a mesma estrutura ... */}
-
       <div className="flex flex-col space-y-2">
-        <label htmlFor="variaveis" className="text-sm font-medium text-white">
+        <label htmlFor="variaveis" className="text-sm font-medium text-dark">
           Variáveis
         </label>
         <div className="space-y-2">
@@ -85,7 +110,7 @@ const TestForm: React.FC = () => {
               {index > 0 && (
                 <button
                   type="button"
-                  className="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                  className="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-dark bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                   onClick={handleRemoveVariable}
                 >
                   Remover
@@ -95,7 +120,6 @@ const TestForm: React.FC = () => {
           ))}
         </div>
       </div>
-
       <div className="flex justify-between">
         <button
           type="button"
