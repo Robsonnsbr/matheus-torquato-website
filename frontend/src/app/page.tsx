@@ -14,10 +14,10 @@ export default function Home() {
         <BannerHeader />
         <TesteElemento />
         {/* <hr className="bg-light w-full p-0.5" /> */}
-        <div className="flex w-full h-full justify-start items-start bg-[#BDBDBD] pb-4 pl-4">
+        <div className="flex w-full h-full justify-start items-start bg-dark pb-4 pl-4">
           <div className="flex w-5/6 m-auto">
             <TestForm />
-            <div className="flex flex-col w-1/2 space-y-4 bg-light p-5 text-center m-5 font-serif rounded-md shadow-md">
+            <div className="flex flex-col w-1/2 space-y-4 bg-accent p-5 text-center m-5 font-serif rounded-md shadow-md">
               <span className="text-center text-xl font-bold">
                 Instruções de Preenchimento
               </span>
