@@ -1,20 +1,19 @@
 import React from "react";
-// import "./style/contentHeader.css";
-import ContainerMedium from "../common/container/ContainerMedium";
+// import ContainerMedium from "../common/container/ContainerMedium";
 
 function Header() {
   return (
     <header
-      className="global-height-header class-header bg-accent"
+      className="fixed flex top-0 left-0 w-full global-height-header class-header bg-accent"
       id="top-header"
     >
-      <ContainerMedium id="container-header">
-        <div className="contentHeader">
-          <h1 className="flex items-center justify-center font-extrabold text-4xl">
-            HEADER
-          </h1>
-        </div>
-      </ContainerMedium>
+      {/* <ContainerMedium id="container-header"> */}
+      <div className="bg-emerald-400 h-full w-full justify-center items-center">
+        <h1 className="flex items-center justify-center font-extrabold text-4xl">
+          HEADER - fix
+        </h1>
+      </div>
+      {/* </ContainerMedium> */}
     </header>
   );
 }

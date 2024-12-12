@@ -8,7 +8,7 @@ const LayoutWrapper = ({ children, ...rest }: ILayoutWrapperProps) => {
   return (
     <div
       {...rest}
-      className="bg-whiteSnow w-full max-w-screen-2xl relative overflow-hidden"
+      className="relative bg-blue-700 w-full max-w-screen-2xl overflow-hidden"
     >
       {children}
     </div>

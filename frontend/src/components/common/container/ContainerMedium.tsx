@@ -6,7 +6,7 @@ const ContainerMedium = ({ children, className, ...rest }: IContainerProps) => {
   return (
     <div
       {...rest}
-      className={`container w-full h-fit mx-auto px-2 sm:w-4/5 ${className}`}
+      className={`container w-full h-10 mx-auto px-2 sm:w-4/5 bg-fuchsia-600 ${className}`}
     >
       {children}
     </div>

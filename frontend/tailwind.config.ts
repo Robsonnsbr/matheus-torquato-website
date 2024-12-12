@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "banner-parallax-header": 'url("/images/bannerHeader_2.jpg")',
+      },
       colors: {
         background: "var(--background)",
         dark: "var(--color-dark)",
