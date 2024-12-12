@@ -14,6 +14,72 @@ export default function Home() {
         <BannerHeader />
         <TesteElemento />
         {/* <hr className="bg-light w-full p-0.5" /> */}
+        <div className="font-sans p-6 flex w-5/6 justify-between space-x-6">
+          {/* Tópico 1 */}
+          <div className="flex-1  text-dark bg-light p-4 rounded-md shadow-md ">
+            <h2 className="text-lg font-semibold mb-2">
+              Tópico 1: Visão Geral
+            </h2>
+            <p className="text-sm  text-justify">
+              Aliquam erat volutpat. Cras in turpis et sapien convallis posuere.
+              Vivamus efficitur, augue sed luctus. Aliquam erat volutpat. Cras
+              in turpis et sapien convallis posuere. Vivamus efficitur, augue
+              sed luctus. Aliquam erat volutpat. Cras in turpis et sapien
+              convallis posuere. Vivamus efficitur, augue sed luctus. Aliquam
+              erat volutpat. Cras in turpis et sapien convallis posuere. Vivamus
+              efficitur, augue sed luctus. Aliquam erat volutpat. Cras in turpis
+              et sapien convallis posuere. Vivamus efficitur, augue sed luctus.
+              Aliquam erat volutpat. Cras in turpis et sapien convallis posuere.
+              Vivamus efficitur, augue sed luctus. Aliquam erat volutpat. Cras
+              in turpis et sapien convallis posuere. Vivamus efficitur, augue
+              sed luctus. Aliquam erat volutpat. Cras in turpis et sapien
+              convallis posuere. Vivamus efficitur, augue sed luctus.
+            </p>
+          </div>
+
+          {/* Tópico 2 */}
+          <div className="flex-1  text-dark  bg-light p-4 rounded-md shadow-md">
+            <h2 className="text-lg font-semibold mb-2">
+              Tópico 2: Funcionalidades
+            </h2>
+            <p className="text-sm text-justify">
+              Aliquam erat volutpat. Cras in turpis et sapien convallis posuere.
+              Vivamus efficitur, augue sed luctus. Aliquam erat volutpat. Cras
+              in turpis et sapien convallis posuere. Vivamus efficitur, augue
+              sed luctus. Aliquam erat volutpat. Cras in turpis et sapien
+              convallis posuere. Vivamus efficitur, augue sed luctus. Aliquam
+              erat volutpat. Cras in turpis et sapien convallis posuere. Vivamus
+              efficitur, augue sed luctus. Aliquam erat volutpat. Cras in turpis
+              et sapien convallis posuere. Vivamus efficitur, augue sed luctus.
+              Aliquam erat volutpat. Cras in turpis et sapien convallis posuere.
+              Vivamus efficitur, augue sed luctus. Aliquam erat volutpat. Cras
+              in turpis et sapien convallis posuere. Vivamus efficitur, augue
+              sed luctus. Aliquam erat volutpat. Cras in turpis et sapien
+              convallis posuere. Vivamus efficitur, augue sed luctus.
+            </p>
+          </div>
+
+          {/* Tópico 3 */}
+          <div className="flex-1  text-dark bg-light p-4 rounded-md shadow-md">
+            <h2 className="text-lg font-semibold mb-2">Tópico 3: Benefícios</h2>
+            <p className="text-sm text-justify">
+              Aliquam erat volutpat. Cras in turpis et sapien convallis posuere.
+              Vivamus efficitur, augue sed luctus. Aliquam erat volutpat. Cras
+              in turpis et sapien convallis posuere. Vivamus efficitur, augue
+              sed luctus. Aliquam erat volutpat. Cras in turpis et sapien
+              convallis posuere. Vivamus efficitur, augue sed luctus. Aliquam
+              erat volutpat. Cras in turpis et sapien convallis posuere. Vivamus
+              efficitur, augue sed luctus. Aliquam erat volutpat. Cras in turpis
+              et sapien convallis posuere. Vivamus efficitur, augue sed luctus.
+              Aliquam erat volutpat. Cras in turpis et sapien convallis posuere.
+              Vivamus efficitur, augue sed luctus. Aliquam erat volutpat. Cras
+              in turpis et sapien convallis posuere. Vivamus efficitur, augue
+              sed luctus. Aliquam erat volutpat. Cras in turpis et sapien
+              convallis posuere. Vivamus efficitur, augue sed luctus.
+            </p>
+          </div>
+        </div>
+
         <div className="flex w-full h-full justify-start items-start bg-dark pb-4 pl-4">
           <div className="flex w-5/6 m-auto">
             <TestForm />
