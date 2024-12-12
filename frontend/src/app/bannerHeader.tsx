@@ -4,11 +4,11 @@ import favIcon from "@/app/favicon.ico";
 
 export default function BannerHeader() {
   return (
-    <div className="bg-fixed bg-banner-parallax-header  bg-right-bottom  h-[600px] w-full">
-      <div className=" font-serif flex flex-col space-y-8   sm:pt-8 sm:pl-8 md:w-max ">
+    <div className="bg-fixed bg-banner-parallax-header bg-cover bg-right-bottom  h-[600px] w-full">
+      <div className="p-10 sm font-serif flex flex-col space-y-8   sm:pt-8 sm:pl-8 md:w-max ">
         <div className="bg-gradient-to-r from-red-500 to-yellow-400  rounded-lg shadow-lg">
           <h1 className="text-3xl font-extrabold text-white">
-            <span className="flex text-4xl text-red">
+            <span className="flex text-4xl text-accent sm:text-red">
               <Image
                 alt="imagem icon"
                 className="p-1"
