@@ -51,7 +51,7 @@ const TestForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col h-full space-y-4 bg-mid-dark p-4 font-serif rounded-md shadow-md"
+      className="flex flex-col h-full space-y-4 bg-mid-dark p-4 mb-3 font-serif rounded-md shadow-md"
     >
       <div className="flex flex-col space-y-2">
         <label htmlFor="nome" className="text-sm font-medium text-white">

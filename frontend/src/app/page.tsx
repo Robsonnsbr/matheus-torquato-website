@@ -9,16 +9,14 @@ export default function Home() {
   return (
     <>
       {/* <Header /> */}
-      <BannerHeader />
       <Main>
+        <BannerHeader />
         <TesteElemento />
-        <hr className="bg-mid-dark w-full p-0.5" />
-        <div className="flex w-full h-96 justify-start items-start bg-light">
-          TESTE
-        </div>
-        <div className="flex w-full h-full pl-5 justify-start items-start bg-mid-dark">
+        {/* <hr className="bg-light w-full p-0.5" /> */}
+        <div className="flex w-full h-[700px] justify-start items-start bg-white pb-4 pl-4">
           <TestForm />
         </div>
+        <div className="flex w-full h-full pl-5 justify-start items-start bg-white "></div>
       </Main>
       <Footer />
     </>

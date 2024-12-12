@@ -1,32 +1,59 @@
+import Image from "next/image";
 import React from "react";
+import favIcon from "@/app/favicon.ico";
 
 export default function BannerHeader() {
   return (
-    <div className="h-2/5  bg-fixed bg-banner-parallax-header  bg-right bg-cover bg-red">
-      <div className="text-accent  font-serif text-xl text-balance flex flex-col space-y-4 pl-2 pt-2 sm:pl-10 sm:pt-10 sm:w-4/6 ">
-        <h1>
-          Sua pesquisa no
-          <span className="text-2xl font-bold sm:text-red pl-1">MAGISDATA</span>
-          .
-          <br />
-          Oferecemos um serviço especializado de coleta e organização de dados
-          para mestrandos em áreas como finanças, contabilidade e administração.
-          Nosso sistema acessa bancos de dados acadêmicos e corporativos,
-          garantindo informações precisas e atualizadas para suas pesquisas.
-        </h1>
-        <h1>
-          Impulsione sua pesquisa com dados confiáveis. Nossa plataforma oferece
-          um vasto banco de dados para mestrandos em áreas como finanças,
-          contabilidade e administração. Coletamos e organizamos informações de
-          diversas fontes, facilitando a análise de dados e a identificação de
-          tendências de mercado.
-        </h1>
-        <h1>
-          Com nossa ferramenta, você pode filtrar e cruzar dados de forma rápida
-          e eficiente, gerando insights valiosos para seus estudos. Nossos
-          algoritmos avançados identificam padrões e correlações, auxiliando na
-          construção de modelos e na tomada de decisões.
-        </h1>
+    <div className="bg-fixed bg-banner-parallax-header  bg-right-bottom  h-[600px] w-full">
+      <div className=" font-serif flex flex-col space-y-8   sm:pt-8 sm:pl-8 md:w-max ">
+        <div className="bg-gradient-to-r from-red-500 to-yellow-400  rounded-lg shadow-lg">
+          <h1 className="text-3xl font-extrabold text-white">
+            <span className="flex text-4xl text-red">
+              <Image
+                alt="imagem icon"
+                className="p-1"
+                src={favIcon}
+                width={50}
+                height={50}
+              />
+              MAGISDATA
+            </span>
+            Dados precisos, impacto real.
+          </h1>
+          <p className="text-lg text-white mt-4">
+            A solução ideal para coleta e organização de{" "}
+            <span className="font-bold">dados acadêmicos</span> e{" "}
+            <span className="font-bold">corporativos</span>.
+          </p>
+        </div>
+
+        <div className="bg-[#BDBDBD] p-6 rounded-lg shadow-lg border text-dark border-gray-200">
+          <h2 className="text-2xl font-bold ">
+            <span className="text-red-600">Especialização</span> em mestrandos:
+          </h2>
+          <p className="text-lg  mt-2">
+            Finanças, Contabilidade, Administração e mais.
+          </p>
+          <p className="text-lg  mt-2">
+            <span className="font-bold">Acesso garantido</span> a bancos de
+            dados confiáveis para suas análises.
+          </p>
+        </div>
+
+        {/* <div className="bg-red p-6 rounded-lg shadow-lg text-dark z-20">
+          <h2 className="text-2xl font-bold ">
+            Por que escolher o <span className="text-red-500">MAGISDATA</span>?
+          </h2>
+          <ul className="mt-4 space-y-2">
+            <li className="text-lg ">
+              ✅ Dados organizados e prontos para uso.
+            </li>
+            <li className="text-lg ">
+              ✅ Insights estratégicos para suas pesquisas.
+            </li>
+            <li className="text-lg ">✅ Confiabilidade em cada informação.</li>
+          </ul>
+        </div> */}
       </div>
     </div>
   );
