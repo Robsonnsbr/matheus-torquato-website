@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import bannerHeader_base3 from "../../public/images/bannerHeader_base3.png";
+// import bannerHeader_base3 from "../../public/images/bannerHeader_base3.png";
 import standardPoors from "../../public/partners/Standard&Poors.svg.png";
 import tttt from "../../public/partners/Tullett-Prebon-logo.webp";
 import moody from "../../public/partners/logo-moody-s-corporation-moody-s-analytics-company-moody-s-investors-service-png-favpng-LibZCL6KAVzGtN1xz6c4sm4va.jpg";
@@ -25,11 +25,11 @@ export default function TesteElemento() {
 
   return (
     <div className="relative w-full h-full ">
-      <Image
+      {/* <Image
         alt="image bannerHeader_base"
         className="absolute bottom-full z-50"
         src={bannerHeader_base3}
-      />
+      /> */}
       <div className="w-full h-fit bg-white flex items-center overflow-hidden p-5">
         <motion.div
           className="flex gap-6"

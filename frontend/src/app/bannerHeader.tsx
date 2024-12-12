@@ -40,9 +40,10 @@ export default function BannerHeader() {
           </p>
         </div>
 
-        {/* <div className="bg-red p-6 rounded-lg shadow-lg text-dark z-20">
+        <div className="bg-[#BDBDBD] p-6 rounded-lg shadow-lg text-dark z-20">
           <h2 className="text-2xl font-bold ">
-            Por que escolher o <span className="text-red-500">MAGISDATA</span>?
+            Por que escolher o{" "}
+            <span className="underline decoration-red">MAGISDATA</span>?
           </h2>
           <ul className="mt-4 space-y-2">
             <li className="text-lg ">
@@ -53,7 +54,7 @@ export default function BannerHeader() {
             </li>
             <li className="text-lg ">✅ Confiabilidade em cada informação.</li>
           </ul>
-        </div> */}
+        </div>
       </div>
     </div>
   );
