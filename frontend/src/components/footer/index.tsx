@@ -7,12 +7,12 @@ const Footer = ({ ...rest }: FooterProps) => {
   return (
     <footer
       {...rest}
-      className="global-height-footer bg-deepIndigoBlue text-whiteSnow h-fit"
+      className="footer bg-deepIndigoBlue text-whiteSnow bg-mid-dark"
     >
-      <section className="pt-16 pb-8 bg-mid-dark border-t-8 ">
+      <section className="pt-16 pb-8 bg-mid-dark border-t-8">
         <ContainerMedium id="container-top-footer">
-          <div className="mt-8 flex justify-between text-white">
-            <div className="space-y-2">
+          <div className=" flex justify-between text-white">
+            <div className="space-y-2 w-[2000px]">
               <h2 className="font-semibold text-lg">Sobre Nós</h2>
               <ul>
                 <li>

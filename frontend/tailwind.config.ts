@@ -1,3 +1,4 @@
+/* cSpell:disable */
 import type { Config } from "tailwindcss";
 
 export default {
@@ -8,8 +9,10 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "banner-parallax-header": 'url("/images/bannerHeader_2.jpg")',
+      fontFamily: {
+        raleway: ["var(--font-raleway)"],
+        openSans: ["var(--font-open-sans)"],
+        poppins: ["var(--font-poppins)"],
       },
       colors: {
         background: "var(--background)",
@@ -18,6 +21,15 @@ export default {
         accent: "var(--color-accent)",
         light: "var(--color-light)",
         red: "var(--color-red)",
+      },
+      textDecorationColor: {
+        red: "var(--color-red)",
+      },
+      backgroundImage: {
+        "parallax-hero-section":
+          'url("/images/background_header_magisdata.jpg")',
+        "parallax-hero-section2": 'url("/images/background_7.jpg")',
+        "banner-parallax-header": 'url("/images/bannerHeader_2.jpg")',
       },
     },
   },

@@ -1,21 +1,20 @@
 "use client";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
-interface TemplatesProps {
+type TemplatesProps = {
   children: React.ReactNode;
-}
+};
 
 function Template({ children }: TemplatesProps) {
-  useEffect(() => {}, []);
-
   return (
     <motion.div
-      initial={{ y: 30, opacity: 0 }}
+      initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.3 }}
+      id="motion-layout-wrapper"
+      className="flex justify-center w-full"
     >
-      <div>{children}</div>
+      {children}
     </motion.div>
   );
 }

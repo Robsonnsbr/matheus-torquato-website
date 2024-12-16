@@ -4,7 +4,7 @@ import React from "react";
 function Header() {
   return (
     <header
-      className="fixed flex top-0 left-0 w-full global-height-header class-header bg-accent"
+      className=" flex top-0 left-0 w-full header class-header bg-accent"
       id="top-header"
     >
       {/* <ContainerMedium id="container-header"> */}

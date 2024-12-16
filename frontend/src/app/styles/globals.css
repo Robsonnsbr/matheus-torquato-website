@@ -2,62 +2,146 @@
 @tailwind components;
 @tailwind utilities;
 
-/* reset and initial styles project */
+/* Reset e estilos iniciais */
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
-  border: 0;
+  padding: 0;
 }
 
-/*  remove browser border pattern  */
-:focus {  
- box-shadow: none !important  
-  }
+html {
+  font-size: 16px; /* Tamanho base */
+}
 
+/* Remover padrão de borda do navegador */
+:focus {
+  outline: none; /* Remove a borda padrão ao focar */
+  box-shadow: none !important;
+}
 
 :root {
-  --background: #ffffff;
-  --color-dark: #222831;
-  --color-mid-dark: #31363F;
+  /* Paleta de cores do projeto */
+  --color-bg: #ffffff;
+  --color-text-dark: #222831;
+  --color-text-mid: #31363F;
   --color-accent: #76ABAE;
-  --color-light: #EEEEEE;
-  --color-red: #D6002A;
-  
-    /* define header and footer and then calculate */
-    --height-header: 60px;
-    --height-footer: 359px;
+  --color-bg-light: #EEEEEE;
+  --color-error: #D6002A;
+  --color-success: #07d600;
+
+  /* Alturas padrão de header e footer */
+  --header-height: 64px; /* Melhor altura para header */
+  --footer-height: 200px; /* Ajuste na altura do footer */
+  --line-height: 1.5; /* Linha de texto com espaçamento confortável */
+  --font-size-base: 16px; /* Tamanho base de fonte */
 }
 
-/* limit application images  */
-img {
-  max-width: 100%;
-}
+/* Limitar largura de imagens */
 
+
+/* Fontes e cores do body */
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  @apply flex justify-center;
+  color: var(--color-text-dark);
+  line-height: var(--line-height);
+  font-size: var(--font-size-base);
+  display: flex;
+  justify-content: center;
+  /* @apply flex justify-center; */
+  /* min-height: 100dvh; */
+  /* width: 100%; */
+  background: var(--color-text-dark);
+  font-size: 1rem; /* 16px */
+   /* box-sizing: border-box;  */
+   /* overflow-x: hidden;  */
+   /* overflow-y: scroll; */
+  /* overflow: auto; */
 }
 
-/* utilities for tailwind */
+h1 {
+  font-size: 2rem; /* 32px */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; /* Garante proporção correta */
+}
+
+/* Utilitários personalizados para Tailwind */
 @layer utilities {
-
-  .global-height-header {
-    min-height: var(--height-header);
+  /* Contêiner do conteúdo principal */
+  .main-content {
+    width: 90%;
+    flex-grow: 1; 
+    padding-top: var(--header-height); 
+    padding-bottom: var(--footer-height); 
+    overflow: hidden;
   }
-    
-  .global-height-footer {
-    min-height: var(--height-header);
+  
+  /* Estilo do header fixo */
+  .header {
+    height: var(--header-height); /* Altura do header */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Garante que fique acima de outros elementos */
+    background-color: var(--color-bg); /* Fundo branco para o header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombras sutis */
   }
 
-  .global-height-main {
-    min-height: calc(100vh - (var(--height-header) - var(--height-footer)));
+  /* Estilo do footer */
+  .footer {
+    width: 100%;
+    min-height: var(--footer-height);
+    background-color: var(--color-bg-light);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    text-align: center;
   }
 
-  .global-section {
-    @apply w-full h-fit py-16
-  } 
+  /* Estilos de responsividade */
+  @media (max-width: 768px) {
+    :root {
+      --header-height: 56px; /* Reduz a altura do header em telas menores */
+      --footer-height: 150px; /* Reduz a altura do footer em telas menores */
+      --font-size-base: 14px; /* Tamanho de fonte menor em telas pequenas */
+    }
 
+    .app-container {
+      padding: 8px; /* Menos espaçamento em telas menores */
+    }
+
+    .footer {
+      font-size: 14px; /* Ajusta o tamanho da fonte do footer */
+    }
+  }
+
+  /* Estilos para telas muito pequenas */
+  @media (max-width: 480px) {
+    .header {
+      height: 48px; /* Header ainda mais baixo em telas muito pequenas */
+    }
+
+    .footer {
+      min-height: 120px; /* Reduz footer para telas muito pequenas */
+    }
+
+    .main-content {
+      padding-top: 48px; /* Ajusta para o header menor */
+      padding-bottom: 120px; /* Ajusta para o footer menor */
+    }
+  }
+}
+
+/* Detecta a barra de rolagem e ajusta o layout */
+@media (min-width: 1024px) {
+  /* Quando houver uma barra de rolagem vertical, ajusta o layout */
+  .app-container {
+    max-width: calc(100% - 15px); /* Ajusta a largura do conteúdo quando a barra de rolagem estiver presente */
+  }
 }

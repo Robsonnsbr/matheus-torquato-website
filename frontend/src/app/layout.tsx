@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 
-import { raleway, poppins, openSans } from "../font";
+import { raleway, poppins, openSans } from "../../src/font";
 import "./styles/globals.css";
 
-import AppProviders from "@/contexts";
+import AppProviders from "@contexts/index";
 
-import LayoutWrapper from "@/components/common/container/LayoutWrapper";
-import WhatsAppButton from "@/components/common/button/btnWhats";
+import WppButton from "@components/common/button/WppButton";
 
 export const metadata: Metadata = {
   title: "Matheus Website",
@@ -16,17 +15,17 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }>) {
   return (
     <html lang="pt-BR">
       <body
         suppressHydrationWarning={true}
-        className={`${raleway.variable} ${poppins.variable} ${openSans.variable} font-mono bg-black`}
+        className={`${raleway.variable} ${poppins.variable} ${openSans.variable} font-sans`}
       >
         <AppProviders>
-          <LayoutWrapper>{children}</LayoutWrapper>
-          <WhatsAppButton />
+          {children}
+          <WppButton />
         </AppProviders>
       </body>
     </html>
