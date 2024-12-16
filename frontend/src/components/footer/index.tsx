@@ -5,11 +5,8 @@ type FooterProps = HTMLAttributes<HTMLDivElement>;
 
 const Footer = ({ ...rest }: FooterProps) => {
   return (
-    <footer
-      {...rest}
-      className="footer bg-deepIndigoBlue text-whiteSnow bg-mid-dark"
-    >
-      <section className="pt-16 pb-8 bg-mid-dark border-t-8">
+    <footer {...rest} className="text-whiteSnow">
+      <section className="pt-16 pb-8 k border-t-8">
         <ContainerMedium id="container-top-footer">
           <div className=" flex justify-between text-white">
             <div className="space-y-2 w-[2000px]">

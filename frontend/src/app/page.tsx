@@ -15,13 +15,19 @@ export default function Home() {
 
       <Main>
         <Section>
-          <h3>Section1</h3>
+          <span className="w-full text-3xl text-center font-extrabold">
+            SECTION1
+          </span>
         </Section>
         <Section>
-          <h3>Section3</h3>
+          <span className="w-full text-3xl text-center font-extrabold">
+            SECTION2
+          </span>
         </Section>
         <Section>
-          <h3>Section4</h3>
+          <span className="w-full text-3xl text-center font-extrabold">
+            SECTION2
+          </span>
         </Section>
       </Main>
       <Footer />

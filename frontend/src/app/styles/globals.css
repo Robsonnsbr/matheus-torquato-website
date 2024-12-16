@@ -22,10 +22,10 @@ html {
 :root {
   /* Paleta de cores do projeto */
   --color-bg: #ffffff;
-  --color-text-dark: #222831;
-  --color-text-mid: #31363F;
+  --color-dark: #222831;
+  --color-mid-dark: #31363F;
   --color-accent: #76ABAE;
-  --color-bg-light: #EEEEEE;
+  --color-light: #EEEEEE;
   --color-error: #D6002A;
   --color-success: #07d600;
 
@@ -42,7 +42,7 @@ html {
 /* Fontes e cores do body */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--color-text-dark);
+  color: var(--color-dark);
   line-height: var(--line-height);
   font-size: var(--font-size-base);
   display: flex;
@@ -50,7 +50,7 @@ body {
   /* @apply flex justify-center; */
   /* min-height: 100dvh; */
   /* width: 100%; */
-  background: var(--color-text-dark);
+  background: var(--color-dark);
   font-size: 1rem; /* 16px */
    /* box-sizing: border-box;  */
    /* overflow-x: hidden;  */
@@ -95,7 +95,7 @@ img {
   .footer {
     width: 100%;
     min-height: var(--footer-height);
-    background-color: var(--color-bg-light);
+    background-color: var(--color-mid-dark);
     display: flex;
     overflow: hidden;
     justify-content: center;
