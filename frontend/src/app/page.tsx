@@ -33,3 +33,6 @@ export default function Home() {
     </AppContainer>
   );
 }
+
+//TODO: AJUSTAR TODO padding da section, talvez seja necessario cria um container dentro, padding left e rigth.
+//TODO: as cores estão com conflito no tailwind, analisar, comportamento: aplica e desaplica sozinha.
