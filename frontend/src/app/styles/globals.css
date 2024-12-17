@@ -27,7 +27,7 @@ html {
   --color-mid-dark: #31363F;
   --color-accent: #76ABAE;
   --color-light: #EEEEEE;
-  --color-error: #D6002A;
+  --color-warning: #D6002A;
   --color-success: #07d600;
 
   /* Alturas padrão de header e footer */

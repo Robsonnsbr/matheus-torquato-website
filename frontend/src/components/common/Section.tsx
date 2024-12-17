@@ -12,7 +12,7 @@ export default function Section({
 }: SectionProps) {
   return (
     <section
-      className={`flex min-h-[43rem] bg-white w-full } ${
+      className={`relative flex min-h-[43rem] bg-white w-full } ${
         className ? className : ""
       }`}
       {...props}

@@ -22,11 +22,8 @@ export default {
         "mid-dark": "var(--color-mid-dark)",
         accent: "var(--color-accent)",
         light: "var(--color-light)",
-        error: "var(--color-error)", // Alterado para --color-error
+        warning: "var(--color-warning)", // Alterado para --color-warning
         success: "var(--color-success)", // Alterado para --color-success
-      },
-      textDecorationColor: {
-        error: "var(--color-error)", // Alterado para --color-error
       },
       backgroundImage: {
         "parallax-hero-section":

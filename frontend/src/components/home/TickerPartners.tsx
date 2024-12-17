@@ -22,7 +22,7 @@ export default function TickerPartners() {
   return (
     <div
       id="ticker-container"
-      className="relative !overflow-hidden w-full h-20 bg-white/50 flex items-center p-5"
+      className="relative !overflow-hidden w-full h-20 bg-white/50 flex items-center p-5 self-end"
     >
       <motion.div
         className="flex gap-6"

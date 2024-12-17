@@ -1,49 +1,61 @@
 import Section from "@components/common/Section";
 import SvgLogoComponent from "@components/svg/SvgLogoComponent";
 import TickerPartners from "@components/home/TickerPartners";
+import Container from "@components/common/container/Container";
 
 export default function HeroSection() {
   return (
     <Section
       id="hero-section"
-      className="flex flex-col justify-between bg-fixed bg-parallax-hero-section2 bg-cover bg-left-top"
+      className="flex flex-col bg-fixed bg-parallax-hero-section2 bg-cover bg-left-top"
     >
-      <div className="relative w-5/6 m-auto">
-        <div className="flex items-start justify-start w-2/4">
-          <div className=" rounded-md font-poppins flex flex-col space-y-8  sm:pt-8 sm:pl-8 md:w-max">
-            <div className=" text-white p-2  rounded-lg shadow-lg">
-              <h1 className="text-3xl font-extrabold sm:text-left text-balance text-center">
-                <span className="text-white font-raleway flex text-5xl text-accent sm:text-red items-center gap-2 underline decoration-[#D6002A]">
-                  <SvgLogoComponent width={50} height={40} />
-                  MAGISDATA:
-                </span>
-              </h1>
-              <p className="text-3xl font-extrabold text-balance text-center sm:text-right">
-                Dados precisos, impacto real. Dados precisos, impacto real.
-                Dados precisos, impacto real. Dados precisos, impacto real.
-                Dados precisos, impacto real. Dados precisos, impacto real.
-                Dados
-              </p>
-              <p className="text-lg text-white mt-4">
-                A solução ideal para coleta e organização de{" "}
-                <span className="font-bold">dados acadêmicos</span> e{" "}
-                <span className="font-bold">corporativos</span>.
-              </p>
-              <p className="text-lg text-white mt-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing e{" "}
-                <span className="font-bold">dados acadêmicos</span> e{" "}
-                <span className="font-bold">corporativos</span>.
-              </p>
-              <p className="text-lg text-white mt-4">
-                ipsum dolor, sit amet consectetur adipisicing e{" "}
-                <span className="font-bold">dados acadêmicos</span> e{" "}
-                <span className="font-bold">corporativos</span>.
-              </p>
-            </div>
-          </div>
+      <Container className="h-full">
+        <div className="flex flex-col space-y-8 xl:w-4/6 text-white font-poppins text-left text-balance my-auto">
+          <h1 className="text-3xl font-extrabold leading-tight uppercase">
+            <span className="font-raleway flex text-5xl sm:text-red items-center p-2">
+              M<span className="sr-only">A</span>
+              <SvgLogoComponent aria-hidden="true" width={50} height={40} />
+              GISDATA
+            </span>
+            <span className="border-t-4 border-warning">
+              Dados Financeiros e Contábeis de Qualidade
+            </span>
+          </h1>
+          <h2 className="text-2xl font-bold leading-snug">
+            Precisa de informações financeiras confiáveis para suas análises?
+          </h2>
+          <p className="text-xl mt-4 leading-relaxed">
+            Oferecemos <span className="font-bold">dados econômicos</span> e{" "}
+            <span className="font-bold">financeiros</span> de empresas de{" "}
+            <span className="font-bold">capital aberto</span> e{" "}
+            <span className="font-bold">capital fechado</span>, com foco em
+            precisão e confiabilidade.
+          </p>
+
+          {/* Fonte dos Dados */}
+          <p className="text-lg mt-4 leading-relaxed">
+            Nossos relatórios são baseados em dados da{" "}
+            <span className="font-bold text-2xl text-warning border-t-4 border-white">
+              Standard & Poor&apos;s
+            </span>
+            , garantindo qualidade e informações auditáveis para decisões
+            estratégicas.
+          </p>
+
+          {/* Benefícios em Lista */}
+          <ul className="list-disc list-inside marker:text-warning mt-4 text-lg leading-relaxed">
+            <li>
+              Relatórios detalhados de empresas nacionais e internacionais.
+            </li>
+            <li>
+              Dados atualizados de empresas de pequeno, médio e grande porte.
+            </li>
+            <li>Análises confiáveis para embasar decisões econômicas.</li>
+          </ul>
         </div>
-      </div>
-      <div id="ticker-wrapper-hero-section" className="w-full h-fit">
+      </Container>
+
+      <div id="ticker-wrapper-hero-section" className="w-full h-fit mt-auto">
         <TickerPartners />
       </div>
     </Section>

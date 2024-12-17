@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react";
-import ContainerMedium from "../common/container/ContainerMedium";
+import ContainerMedium from "../common/container/Container";
 
 type FooterProps = HTMLAttributes<HTMLDivElement>;
 

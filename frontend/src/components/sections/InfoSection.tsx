@@ -4,7 +4,7 @@ export default function InfoSection() {
   return (
     <Section
       id="info-section"
-      className="flex-col justify-between  !bg-[#475569]"
+      className="flex-col justify-between !bg-mid-dark"
     >
       <div className="flex flex-wrap justify-between m-auto overflow-hidden w-5/6">
         <div className="flex w-full sm:w-1/3 p-4">
