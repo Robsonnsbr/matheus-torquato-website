@@ -1,3 +1,4 @@
+"use client";
 import Section from "@components/common/Section";
 import SvgLogoComponent from "@components/svg/SvgLogoComponent";
 import TickerPartners from "@components/home/TickerPartners";
@@ -31,8 +32,6 @@ export default function HeroSection() {
             <span className="font-bold">capital fechado</span>, com foco em
             precisão e confiabilidade.
           </p>
-
-          {/* Fonte dos Dados */}
           <p className="text-lg mt-4 leading-relaxed">
             Nossos relatórios são baseados em dados da{" "}
             <span className="font-bold text-2xl text-warning border-t-4 border-white">
@@ -42,7 +41,6 @@ export default function HeroSection() {
             estratégicas.
           </p>
 
-          {/* Benefícios em Lista */}
           <ul className="list-disc list-inside marker:text-warning mt-4 text-lg leading-relaxed">
             <li>
               Relatórios detalhados de empresas nacionais e internacionais.
