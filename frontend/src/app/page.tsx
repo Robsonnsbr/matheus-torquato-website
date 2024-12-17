@@ -26,7 +26,7 @@ export default function Home() {
         </Section>
         <Section>
           <span className="w-full text-3xl text-center font-extrabold">
-            SECTION2
+            SECTION3
           </span>
         </Section>
       </Main>
