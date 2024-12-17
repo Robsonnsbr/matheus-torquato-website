@@ -16,7 +16,9 @@ export default {
       },
       colors: {
         background: "var(--color-bg)", // Alterado para --color-bg
+        // background: "var(--color-bg)", // Alterado para --color-bg
         dark: "var(--color-dark)",
+        "dark-blue": "var(--color-dark-blue)",
         "mid-dark": "var(--color-mid-dark)",
         accent: "var(--color-accent)",
         light: "var(--color-light)",
@@ -30,7 +32,7 @@ export default {
         "parallax-hero-section":
           'url("/images/background_header_magisdata.jpg")',
         "parallax-hero-section2": 'url("/images/background_7.jpg")',
-        "banner-parallax-header": 'url("/images/bannerHeader_2.jpg")',
+        "parallax-background_2": 'url("/images/background_2.jpg")',
       },
     },
   },

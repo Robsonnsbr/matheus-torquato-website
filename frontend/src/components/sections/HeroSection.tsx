@@ -6,9 +6,9 @@ export default function HeroSection() {
   return (
     <Section
       id="hero-section"
-      className="relative flex-col justify-between bg-fixed bg-parallax-hero-section2 bg-cover bg-left-top"
+      className="flex flex-col justify-between bg-fixed bg-parallax-hero-section2 bg-cover bg-left-top"
     >
-      <div className="flex w-full m-auto sm:w-1/2 sm:m-6 max-w-full overflow-hidden">
+      <div className="relative flex m-auto sm:w-1/2 sm:m-6 max-w-full overflow-hidden">
         <div className=" rounded-md font-poppins flex flex-col space-y-8  sm:pt-8 sm:pl-8 md:w-max">
           <div className=" text-white p-2  rounded-lg shadow-lg overflow-hidden">
             <h1 className="text-3xl font-extrabold sm:text-left text-balance text-center overflow-hidden">

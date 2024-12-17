@@ -6,6 +6,8 @@ import HeroSection from "@components/sections/HeroSection";
 import Main from "@components/common/Main";
 import Section from "../components/common/Section";
 import Footer from "@components/footer";
+import InfoSection from "@components/sections/InfoSection";
+import GuideSection from "@components/sections/GuideSection";
 // import TestForm from "./form/form";
 
 export default function Home() {
@@ -14,11 +16,8 @@ export default function Home() {
       <HeroSection />
 
       <Main>
-        <Section>
-          <span className="w-full text-3xl text-center font-extrabold">
-            SECTION1
-          </span>
-        </Section>
+        <InfoSection />
+        <GuideSection />
         <Section>
           <span className="w-full text-3xl text-center font-extrabold">
             SECTION2
