@@ -10,9 +10,9 @@ export default function HeroSection() {
       className="flex flex-col bg-fixed bg-parallax-hero-section2 bg-cover bg-left-top"
     >
       <Container className="h-full">
-        <div className="flex flex-col space-y-8 xl:w-4/6 text-white font-poppins text-left text-balance my-auto">
+        <div className="flex flex-col space-y-8 xl:w-4/6 text-white font-poppins text-center sm:text-left text-balance my-auto">
           <h1 className="font-extrabold leading-none uppercase">
-            <span className="font-raleway flex sm:text-red items-center">
+            <span className="font-raleway flex sm:text-red items-center justify-center sm:justify-start">
               M<span className="sr-only">A</span>
               <SvgLogoComponent aria-hidden="true" width={50} height={40} />
               GISDATA
