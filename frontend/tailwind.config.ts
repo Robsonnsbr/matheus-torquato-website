@@ -15,15 +15,15 @@ export default {
         poppins: ["var(--font-poppins)"],
       },
       colors: {
-        background: "var(--color-bg)", // Alterado para --color-bg
-        // background: "var(--color-bg)", // Alterado para --color-bg
+        background: "var(--color-bg)",
+
         dark: "var(--color-dark)",
         "dark-blue": "var(--color-dark-blue)",
         "mid-dark": "var(--color-mid-dark)",
         accent: "var(--color-accent)",
         light: "var(--color-light)",
-        warning: "var(--color-warning)", // Alterado para --color-warning
-        success: "var(--color-success)", // Alterado para --color-success
+        warning: "var(--color-warning)",
+        success: "var(--color-success)",
       },
       backgroundImage: {
         "parallax-hero-section":

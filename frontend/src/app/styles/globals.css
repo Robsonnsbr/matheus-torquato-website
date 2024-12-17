@@ -31,10 +31,10 @@ html {
   --color-success: #07d600;
 
   /* Alturas padrão de header e footer */
-  --header-height: 64px; /* Melhor altura para header */
-  --footer-height: 200px; /* Ajuste na altura do footer */
-  --line-height: 1.5; /* Linha de texto com espaçamento confortável */
-  --font-size-base: 16px; /* Tamanho base de fonte */
+  --header-height: 64px; 
+  --footer-height: 200px; 
+  --line-height: 1.5; 
+  --font-size-base: 16px; 
 }
 
 /* Limitar largura de imagens */
@@ -48,19 +48,12 @@ body {
   font-size: var(--font-size-base);
   display: flex;
   justify-content: center;
-  /* @apply flex justify-center; */
-  /* min-height: 100dvh; */
-  /* width: 100%; */
   background: var(--color-dark);
-  font-size: 1rem; /* 16px */
-   /* box-sizing: border-box;  */
-   /* overflow-x: hidden;  */
-   /* overflow-y: scroll; */
-  /* overflow: auto; */
+  font-size: 1rem;
 }
 
 h1 {
-  font-size: 2rem; /* 32px */
+  font-size: 3rem; /* 48px */
 }
 
 img {

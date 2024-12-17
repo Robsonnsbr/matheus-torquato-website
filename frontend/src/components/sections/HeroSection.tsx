@@ -11,13 +11,13 @@ export default function HeroSection() {
     >
       <Container className="h-full">
         <div className="flex flex-col space-y-8 xl:w-4/6 text-white font-poppins text-left text-balance my-auto">
-          <h1 className="text-3xl font-extrabold leading-tight uppercase">
-            <span className="font-raleway flex text-5xl sm:text-red items-center p-2">
+          <h1 className="font-extrabold leading-none uppercase">
+            <span className="font-raleway flex sm:text-red items-center">
               M<span className="sr-only">A</span>
               <SvgLogoComponent aria-hidden="true" width={50} height={40} />
               GISDATA
             </span>
-            <span className="border-t-4 border-warning">
+            <span className="text-3xl border-t-4 border-warning">
               Dados Financeiros e Contábeis de Qualidade
             </span>
           </h1>
