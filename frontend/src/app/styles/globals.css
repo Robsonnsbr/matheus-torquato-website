@@ -98,6 +98,11 @@ img {
     text-align: center;
   }
 
+  .border-octagonal {
+    clip-path: polygon(2% 0%, 98% 0%, 100% 2%, 100% 98%, 98% 100%, 2% 100%, 0% 98%, 0% 2%);
+  }
+  
+
   /* Estilos de responsividade */
   @media (max-width: 768px) {
     :root {
