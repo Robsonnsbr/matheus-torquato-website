@@ -1,15 +1,16 @@
 import React, { HTMLAttributes } from "react";
-import ContainerMedium from "../common/container/Container";
+import Container from "@components/common/container/Container";
+import Section from "@components/common/Section";
 
 type FooterProps = HTMLAttributes<HTMLDivElement>;
 
 const Footer = ({ ...rest }: FooterProps) => {
   return (
     <footer {...rest} className="text-whiteSnow">
-      <section className="pt-16 pb-8 k border-t-8">
-        <ContainerMedium id="container-top-footer">
-          <div className=" flex justify-between text-white">
-            <div className="space-y-2 w-[2000px]">
+      <Section className="relative flex min-h-fit !bg-black w-full">
+        <Container className="flex flex-col gap-4 py-12">
+          <div className=" flex justify-between text-white w-full">
+            <div className="space-y-10">
               <h2 className="font-semibold text-lg">Sobre Nós</h2>
               <ul>
                 <li>
@@ -30,7 +31,7 @@ const Footer = ({ ...rest }: FooterProps) => {
               </ul>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-10">
               <h2 className="font-semibold text-lg">Serviços</h2>
               <ul>
                 <li>
@@ -51,7 +52,7 @@ const Footer = ({ ...rest }: FooterProps) => {
               </ul>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-10">
               <h2 className="font-semibold text-lg">Redes Sociais</h2>
               <ul>
                 <li>
@@ -72,7 +73,7 @@ const Footer = ({ ...rest }: FooterProps) => {
               </ul>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-10">
               <h2 className="font-semibold text-lg">Contato</h2>
               <ul>
                 <li>
@@ -91,16 +92,12 @@ const Footer = ({ ...rest }: FooterProps) => {
               </ul>
             </div>
           </div>
-
-          {/* Linha de separação */}
-          <div className="border-t border-t-lightApricotSalmon mt-8"></div>
-
           {/* Copyright */}
           <div className="mt-6 text-center text-white text-sm">
             <p>&copy; 2024 Empresa Exemplo. Todos os direitos reservados.</p>
           </div>
-        </ContainerMedium>
-      </section>
+        </Container>
+      </Section>
     </footer>
   );
 };

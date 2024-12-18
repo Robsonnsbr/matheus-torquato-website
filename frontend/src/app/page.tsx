@@ -8,6 +8,8 @@ import Section from "../components/common/Section";
 import Footer from "@components/footer";
 import InfoSection from "@components/sections/InfoSection";
 import GuideSection from "@components/sections/GuideSection";
+import TestForm from "./form/form";
+import Container from "@components/common/container/Container";
 // import TestForm from "./form/form";
 
 export default function Home() {
@@ -18,10 +20,13 @@ export default function Home() {
       <Main>
         <InfoSection />
         <GuideSection />
-        <Section>
-          <span className="w-full text-3xl text-center font-extrabold">
-            SECTION2
-          </span>
+        <Section className="!bg-mid-dark">
+          <Container>
+            <div className="flex flex-col w-full justify-center items-center">
+              <h1 className="text-white">FORM</h1>
+              <TestForm />
+            </div>
+          </Container>
         </Section>
         <Section>
           <span className="w-full text-3xl text-center font-extrabold">
