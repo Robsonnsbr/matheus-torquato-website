@@ -8,10 +8,10 @@ export default function HeroSection() {
   return (
     <Section
       id="hero-section"
-      className="flex flex-col bg-fixed bg-parallax-hero-section2 bg-cover bg-left-top"
+      className="flex flex-col bg-fixed bg-parallax-background_2 bg-cover bg-left-top"
     >
       <Container className="h-full">
-        <div className="flex flex-col space-y-8 xl:w-4/6 text-white font-poppins text-center sm:text-left text-balance my-auto">
+        <div className="flex flex-col space-y-8 text-black font-poppins text-center sm:text-left text-balance my-auto">
           <h1 className="font-extrabold leading-none uppercase">
             <span className="font-raleway flex sm:text-red items-center justify-center sm:justify-start">
               M<span className="sr-only">A</span>
@@ -34,7 +34,7 @@ export default function HeroSection() {
           </p>
           <p className="text-lg mt-4 leading-relaxed">
             Nossos relatórios são baseados em dados da{" "}
-            <span className="font-bold text-2xl text-warning border-t-4 border-white">
+            <span className="font-bold text-2xl text-warning border-t-4 border-black">
               Standard & Poor&apos;s
             </span>
             , garantindo qualidade e informações auditáveis para decisões

@@ -17,16 +17,28 @@ export default function TickerPartners() {
     tttt,
     moody,
     logo2,
+    standardPoors,
+    tttt,
+    moody,
+    logo2,
+    standardPoors,
+    tttt,
+    moody,
+    logo2,
+    standardPoors,
+    tttt,
+    moody,
+    logo2,
+    standardPoors,
   ];
 
   return (
     <div
       id="ticker-container"
-      className="relative !overflow-hidden w-full h-20 bg-white/50 flex items-center p-5 self-end"
+      className="relative !overflow-hidden w-full h-20 bg-none flex items-center p-5 self-end"
     >
       <motion.div
         className="flex gap-6"
-        initial={{ x: "100%" }}
         animate={{ x: "-100%" }}
         transition={{
           duration: 10,

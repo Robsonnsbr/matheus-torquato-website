@@ -40,4 +40,4 @@ export default function Home() {
 }
 
 //TODO: AJUSTAR TODO padding da section, talvez seja necessario cria um container dentro, padding left e rigth.
-//TODO: as cores estão com conflito no tailwind, analisar, comportamento: aplica e desaplica sozinha.
+//TODO: as cores estão com conflito no tailwind, analisar, comportamento: aplica e desaplica sozinha.(talvez seja a apenas sobrepor com !important)

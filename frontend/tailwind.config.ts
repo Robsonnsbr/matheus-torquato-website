@@ -30,6 +30,7 @@ export default {
           'url("/images/background_header_magisdata.jpg")',
         "parallax-hero-section2": 'url("/images/background_7.jpg")',
         "parallax-background_2": 'url("/images/background_2.jpg")',
+        "parallax-background_3": 'url("/images/background_3.jpg")',
       },
     },
   },
