@@ -41,7 +41,7 @@ export default function TickerPartners() {
         className="flex gap-6"
         animate={{ x: "-100%" }}
         transition={{
-          duration: 10,
+          duration: 50,
           repeat: Infinity,
           ease: "linear",
         }}
