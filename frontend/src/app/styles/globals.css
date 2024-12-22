@@ -27,8 +27,13 @@ html {
   --color-mid-dark: #31363F;
   --color-accent: #76ABAE;
   --color-light: #EEEEEE;
-  --color-warning: #D6002A;
+  --color-red: #D6002A;
+  --color-green: #2A9D8F;  
+  --color-blue: #264653;  
   --color-success: #07d600;
+  --color-light: #F4F4F4;  
+  --color-light-secondary: #EAEAEA;  
+
 
   /* Alturas padrão de header e footer */
   --header-height: 64px; 

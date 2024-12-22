@@ -5,10 +5,10 @@ export default function InfoSection() {
   return (
     <Section
       id="info-section"
-      className="flex-col justify-between !bg-mid-dark"
+      className="flex-col justify-between bg-[var(--color-blue)]"
     >
       <Container className="flex flex-col py-12">
-        <h2 className="uppercase self-center text-warning font-poppins font-extrabold text-3xl pb-8 text-center">
+        <h2 className="uppercase self-center text-red font-poppins font-extrabold text-3xl pb-8 text-center">
           Relatórios Personalizados para Estratégias de Sucesso
         </h2>
         <div className="flex flex-wrap justify-between m-auto overflow-hidden">

@@ -22,7 +22,7 @@ export default {
         "mid-dark": "var(--color-mid-dark)",
         accent: "var(--color-accent)",
         light: "var(--color-light)",
-        warning: "var(--color-warning)",
+        red: "var(--color-red)",
         success: "var(--color-success)",
       },
       backgroundImage: {
@@ -31,6 +31,7 @@ export default {
         "parallax-hero-section2": 'url("/images/background_7.jpg")',
         "parallax-background_2": 'url("/images/background_2.jpg")',
         "parallax-background_3": 'url("/images/background_3.jpg")',
+        "parallax-background_11": 'url("/images/background_11.jpg")',
       },
     },
   },

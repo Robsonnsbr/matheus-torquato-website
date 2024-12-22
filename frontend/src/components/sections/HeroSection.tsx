@@ -8,17 +8,17 @@ export default function HeroSection() {
   return (
     <Section
       id="hero-section"
-      className="flex flex-col bg-fixed bg-parallax-background_2 bg-cover bg-left-top"
+      className="flex flex-col bg-fixed bg-parallax-background_11 bg-cover bg-right-bottom"
     >
       <Container className="h-full">
-        <div className="flex flex-col space-y-8 text-black font-poppins text-center sm:text-left text-balance my-auto">
+        <div className="flex flex-col space-y-8 text-white font-poppins !text-center text-balance my-auto">
           <h1 className="font-extrabold leading-none uppercase">
-            <span className="font-raleway flex sm:text-red items-center justify-center sm:justify-start">
+            <span className="font-raleway flex items-center justify-center">
               M<span className="sr-only">A</span>
               <SvgLogoComponent aria-hidden="true" width={50} height={40} />
               GISDATA
             </span>
-            <span className="text-3xl border-t-4 border-warning">
+            <span className="text-3xl border-t-4 border-red">
               Dados Financeiros e Contábeis de Qualidade
             </span>
           </h1>
@@ -32,16 +32,16 @@ export default function HeroSection() {
             <span className="font-bold">capital fechado</span>, com foco em
             precisão e confiabilidade.
           </p>
-          <p className="text-lg mt-4 leading-relaxed">
+          <p className="text-lg mt-4 leading-relaxed text-left">
             Nossos relatórios são baseados em dados da{" "}
-            <span className="font-bold text-2xl text-warning border-t-4 border-black">
+            <span className="font-bold text-2xl text-red border-t-4 border-white">
               Standard & Poor&apos;s
             </span>
             , garantindo qualidade e informações auditáveis para decisões
             estratégicas.
           </p>
 
-          <ul className="list-disc list-inside marker:text-warning mt-4 text-lg leading-relaxed">
+          <ul className="list-disc list-inside marker:text-red mt-4 text-lg leading-relaxed text-left">
             <li>
               Relatórios detalhados de empresas nacionais e internacionais.
             </li>
