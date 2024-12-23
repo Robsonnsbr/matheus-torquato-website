@@ -6,7 +6,7 @@ export default function InfoSection() {
   return (
     <Section
       id="info-section"
-      className="bg-parallax-background_5 bg-cover flex flex-col justify-center items-center"
+      className="bg-fixed bg-parallax-background_5 bg-cover flex flex-col justify-center items-center"
     >
       <Container className="py-12 text-white flex flex-col">
         <LineWithVertical />

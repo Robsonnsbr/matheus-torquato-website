@@ -11,6 +11,7 @@ import GuideSection from "@components/sections/GuideSection";
 import TestForm from "./form/form";
 import Container from "@components/common/container/Container";
 import TickerPartners from "@components/home/TickerPartners";
+import LineWithVertical from "@components/svg/LineWithVertical";
 // import TestForm from "./form/form";
 
 export default function Home() {
@@ -21,8 +22,9 @@ export default function Home() {
       <Main>
         <InfoSection />
         <GuideSection />
-        <Section className="bg-parallax-background_16 bg-cover flex flex-col justify-between">
-          <Container>
+        <Section className="bg-fixed  bg-parallax-background_16 bg-cover flex flex-col justify-between">
+          <Container className="flex flex-col">
+            <LineWithVertical />
             <div className="flex flex-col w-full justify-center items-center ">
               <TestForm />
             </div>
