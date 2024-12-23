@@ -9,8 +9,8 @@ const Footer = ({ ...rest }: FooterProps) => {
     <footer {...rest} className="text-whiteSnow">
       <Section className="relative flex min-h-fit !bg-blue w-full">
         <Container className="flex flex-col gap-4 py-12">
-          <div className=" flex justify-between text-white w-full">
-            <div className="space-y-10">
+          <div className="flex flex-wrap gap-6 justify-center items-center text-white w-full">
+            <div className="space-y-10 flex-1 min-w-[200px] max-w-[300px] text-center">
               <h2 className="font-semibold text-lg">Sobre Nós</h2>
               <ul>
                 <li>
@@ -31,7 +31,7 @@ const Footer = ({ ...rest }: FooterProps) => {
               </ul>
             </div>
 
-            <div className="space-y-10">
+            <div className="space-y-10 flex-1 min-w-[200px] max-w-[300px] text-center">
               <h2 className="font-semibold text-lg">Serviços</h2>
               <ul>
                 <li>
@@ -52,7 +52,7 @@ const Footer = ({ ...rest }: FooterProps) => {
               </ul>
             </div>
 
-            <div className="space-y-10">
+            <div className="space-y-10 flex-1 min-w-[200px] max-w-[300px] text-center">
               <h2 className="font-semibold text-lg">Redes Sociais</h2>
               <ul>
                 <li>
@@ -73,7 +73,7 @@ const Footer = ({ ...rest }: FooterProps) => {
               </ul>
             </div>
 
-            <div className="space-y-10">
+            <div className="space-y-10 flex-1 min-w-[200px] max-w-[300px] text-center">
               <h2 className="font-semibold text-lg">Contato</h2>
               <ul>
                 <li>

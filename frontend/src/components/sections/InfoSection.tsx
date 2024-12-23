@@ -5,9 +5,9 @@ export default function InfoSection() {
   return (
     <Section
       id="info-section"
-      className="!bg-green justify-center items-center"
+      className="bg-parallax-background_5 bg-cover justify-center items-center"
     >
-      <Container className="py-12 text-white ">
+      <Container className="py-12 text-white flex flex-col sm:flex-row">
         <h2 className="uppercase self-center font-poppins font-extrabold text-3xl pb-8 text-center text-blue">
           Insights Estratégicos e Personalizados
         </h2>

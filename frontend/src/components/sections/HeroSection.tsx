@@ -11,7 +11,8 @@ export default function HeroSection() {
       id="hero-section"
       className="flex flex-col bg-fixed bg-parallax-background_12 bg-cover bg-right-bottom"
     >
-      <Container className="h-full flex-col">
+      <Container className="h-full flex flex-col">
+        {/* Cabeçalho centralizado */}
         <div className="flex flex-col space-y-8 text-white font-poppins !text-center text-balance m-auto">
           <h1 className="font-extrabold leading-none uppercase">
             <span className="font-raleway flex items-center justify-center">
@@ -33,8 +34,11 @@ export default function HeroSection() {
             Precisa de ajuda para coletar seus dados econômico-financeiros?
           </h2>
         </div>
-        <div className="flex flex-wrap gap-6 text-lg text-white leading-relaxed text-justify py-10">
-          <ul className="list-none flex-1">
+
+        {/* Conteúdo com flex-wrap e alinhamento central */}
+        <div className="flex flex-wrap gap-6 justify-center items-center text-lg text-white leading-relaxed text-justify py-10">
+          {/* Coluna 1 */}
+          <ul className="list-none flex-1 min-w-[300px] max-w-[500px]">
             <li className="flex items-start gap-2">
               <IoMdArrowRoundForward
                 className="text-red"
@@ -60,7 +64,9 @@ export default function HeroSection() {
               Informações de setor e indústria.
             </li>
           </ul>
-          <ul className="list-none flex-1">
+
+          {/* Coluna 2 */}
+          <ul className="list-none flex-1 min-w-[300px] max-w-[500px]">
             <li className="flex items-start gap-2">
               <IoMdArrowRoundForward
                 className="text-red"

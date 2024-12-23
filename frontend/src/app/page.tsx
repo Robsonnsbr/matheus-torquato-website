@@ -10,7 +10,6 @@ import InfoSection from "@components/sections/InfoSection";
 import GuideSection from "@components/sections/GuideSection";
 import TestForm from "./form/form";
 import Container from "@components/common/container/Container";
-import TickerPartners from "@components/home/TickerPartners";
 // import TestForm from "./form/form";
 
 export default function Home() {
@@ -21,19 +20,12 @@ export default function Home() {
       <Main>
         <InfoSection />
         <GuideSection />
-        <Section className="!bg-extra-light-green flex flex-col">
+        <Section className="bg-parallax-background_16 bg-cover flex flex-col">
           <Container>
             <div className="flex flex-col w-full justify-center items-center ">
-              <h1 className="text-white">FORM</h1>
               <TestForm />
             </div>
           </Container>
-          <div
-            id="ticker-wrapper-hero-section"
-            className="w-full h-fit mt-auto"
-          >
-            <TickerPartners />
-          </div>
         </Section>
       </Main>
       <Footer />
