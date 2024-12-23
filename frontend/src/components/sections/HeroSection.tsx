@@ -1,61 +1,103 @@
 "use client";
 import Section from "@components/common/Section";
-import SvgLogoComponent from "@components/svg/SvgLogoComponent";
+// import SvgLogoComponent from "@components/svg/SvgLogoComponent";
+import Image from "next/image";
+import logoIqfinancialsLarge from "@public/images/logo_name_iqfinancials_large.png";
 import TickerPartners from "@components/home/TickerPartners";
 import Container from "@components/common/container/Container";
+import { IoMdArrowRoundForward } from "react-icons/io";
 
 export default function HeroSection() {
   return (
     <Section
       id="hero-section"
-      className="flex flex-col bg-fixed bg-parallax-background_11 bg-cover bg-right-bottom"
+      className="flex flex-col bg-fixed bg-parallax-background_12 bg-cover bg-right-bottom"
     >
-      <Container className="h-full">
-        <div className="flex flex-col space-y-8 text-white font-poppins !text-center text-balance my-auto">
+      <Container className="h-full flex-col">
+        <div className="flex flex-col space-y-8 text-white font-poppins !text-center text-balance m-auto">
           <h1 className="font-extrabold leading-none uppercase">
             <span className="font-raleway flex items-center justify-center">
-              M<span className="sr-only">A</span>
-              <SvgLogoComponent aria-hidden="true" width={50} height={40} />
-              GISDATA
+              <span className="sr-only">iq financials</span>
+              {/* <SvgLogoComponent aria-hidden="true" width={50} height={40} /> */}
+              <Image
+                alt="logo iq financials"
+                src={logoIqfinancialsLarge}
+                height={100}
+                width={500}
+                className="sm:pt-20"
+              />
             </span>
             <span className="text-3xl border-t-4 border-red">
-              Dados Financeiros e Contábeis de Qualidade
+              Dados Econômicos, Financeiros e Contábeis
             </span>
           </h1>
           <h2 className="text-2xl font-bold leading-snug">
-            Precisa de informações financeiras confiáveis para suas análises?
+            Precisa de ajuda para coletar seus dados econômico-financeiros?
           </h2>
-          <p className="text-xl mt-4 leading-relaxed">
-            Oferecemos <span className="font-bold">dados econômicos</span> e{" "}
-            <span className="font-bold">financeiros</span> de empresas de{" "}
-            <span className="font-bold">capital aberto</span> e{" "}
-            <span className="font-bold">capital fechado</span>, com foco em
-            precisão e confiabilidade.
-          </p>
-          <p className="text-lg mt-4 leading-relaxed text-left">
-            Nossos relatórios são baseados em dados da{" "}
-            <span className="font-bold text-2xl text-red border-t-4 border-white">
-              Standard & Poor&apos;s
-            </span>
-            , garantindo qualidade e informações auditáveis para decisões
-            estratégicas.
-          </p>
-
-          <ul className="list-disc list-inside marker:text-red mt-4 text-lg leading-relaxed text-left">
-            <li>
-              Relatórios detalhados de empresas nacionais e internacionais.
+        </div>
+        <div className="flex flex-wrap gap-6 text-lg text-white leading-relaxed text-justify py-10">
+          <ul className="list-none flex-1">
+            <li className="flex items-start gap-2">
+              <IoMdArrowRoundForward
+                className="text-red"
+                style={{ fontSize: "24px", minWidth: "24px" }}
+              />
+              Dados financeiros de mais de 200 mil empresas públicas e privadas,
+              incluindo balanços patrimoniais, demonstrações de resultados,
+              fluxo de caixa e indicadores financeiros.
             </li>
-            <li>
-              Dados atualizados de empresas de pequeno, médio e grande porte.
+            <li className="flex items-start gap-2">
+              <IoMdArrowRoundForward
+                className="text-red"
+                style={{ fontSize: "24px", minWidth: "24px" }}
+              />
+              Informações de mais de 70 mil transações distribuídas em mais de
+              150 países.
             </li>
-            <li>Análises confiáveis para embasar decisões econômicas.</li>
+            <li className="flex items-start gap-2">
+              <IoMdArrowRoundForward
+                className="text-red"
+                style={{ fontSize: "24px", minWidth: "24px" }}
+              />
+              Informações de setor e indústria.
+            </li>
+          </ul>
+          <ul className="list-none flex-1">
+            <li className="flex items-start gap-2">
+              <IoMdArrowRoundForward
+                className="text-red"
+                style={{ fontSize: "24px", minWidth: "24px" }}
+              />
+              Análises de empresas comparáveis e projeções financeiras.
+            </li>
+            <li className="flex items-start gap-2">
+              <IoMdArrowRoundForward
+                className="text-red"
+                style={{ fontSize: "24px", minWidth: "24px" }}
+              />
+              Dados de mercados financeiros globais, incluindo títulos de
+              dívidas, commodities e derivativos.
+            </li>
+            <li className="flex items-start gap-2">
+              <IoMdArrowRoundForward
+                className="text-red"
+                style={{ fontSize: "24px", minWidth: "24px" }}
+              />
+              Integração para Excel, Stata, Python e outros softwares
+              necessários para análises.
+            </li>
+            <li className="flex items-start gap-2">
+              <IoMdArrowRoundForward
+                className="text-red"
+                style={{ fontSize: "24px", minWidth: "24px" }}
+              />
+              Informações para diversas necessidades, como estudos
+              econométricos, cálculo de taxa de desconto, análise de múltiplos,
+              projeções de setor e avaliação de empresas.
+            </li>
           </ul>
         </div>
       </Container>
-
-      <div id="ticker-wrapper-hero-section" className="w-full h-fit mt-auto">
-        <TickerPartners />
-      </div>
     </Section>
   );
 }

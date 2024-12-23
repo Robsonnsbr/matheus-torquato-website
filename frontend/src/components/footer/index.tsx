@@ -7,7 +7,7 @@ type FooterProps = HTMLAttributes<HTMLDivElement>;
 const Footer = ({ ...rest }: FooterProps) => {
   return (
     <footer {...rest} className="text-whiteSnow">
-      <Section className="relative flex min-h-fit !bg-black w-full">
+      <Section className="relative flex min-h-fit !bg-blue w-full">
         <Container className="flex flex-col gap-4 py-12">
           <div className=" flex justify-between text-white w-full">
             <div className="space-y-10">

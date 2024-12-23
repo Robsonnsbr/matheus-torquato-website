@@ -28,8 +28,10 @@ html {
   --color-accent: #76ABAE;
   --color-light: #EEEEEE;
   --color-red: #D6002A;
-  --color-green: #2A9D8F;  
-  --color-blue: #264653;  
+  --color-green: #268d81;            /* Verde base */
+  --color-light-green: #78b6b1;       /* Verde suave (mais claro que o original) */
+  --color-extra-light-green: #c1e1e0;
+  --color-blue: #343e5c;  
   --color-success: #07d600;
   --color-light: #F4F4F4;  
   --color-light-secondary: #EAEAEA;  

@@ -2,7 +2,7 @@ import * as React from "react";
 import { SVGProps } from "react";
 const SvgBackgroundComponent = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" {...props}>
-    <title>{"background_header_magisdata"}</title>
+    <title>{"background_header_IQ Financials"}</title>
     <defs>
       <image
         id="a"
