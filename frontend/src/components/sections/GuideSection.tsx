@@ -1,5 +1,4 @@
 import Section from "@components/common/Section";
-import TickerPartners from "@components/home/TickerPartners";
 
 export default function GuideSection() {
   return (

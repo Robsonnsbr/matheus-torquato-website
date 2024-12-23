@@ -1,9 +1,7 @@
 "use client";
 import Section from "@components/common/Section";
-// import SvgLogoComponent from "@components/svg/SvgLogoComponent";
 import Image from "next/image";
 import logoIqfinancialsLarge from "@public/images/logo_name_iqfinancials_large.png";
-import TickerPartners from "@components/home/TickerPartners";
 import Container from "@components/common/container/Container";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
