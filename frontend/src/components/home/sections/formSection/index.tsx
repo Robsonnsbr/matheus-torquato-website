@@ -7,7 +7,10 @@ import TickerPartners from "@components/home/sections/heroSection/TickerPartners
 
 export default function FormSection() {
   return (
-    <ContainerSection className="bg-fixed bg-parallax-form-section bg-cover flex flex-col justify-between">
+    <ContainerSection
+      id="form-section"
+      className="bg-fixed bg-parallax-form-section bg-cover flex flex-col justify-between"
+    >
       <Container className="flex flex-col">
         <LineWithVertical />
         <div className="flex flex-col w-full justify-center items-center">

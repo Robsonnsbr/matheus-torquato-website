@@ -5,7 +5,7 @@ import LineWithVertical from "@components/svg/LineWithVertical";
 export default function InstructionsSection() {
   return (
     <ContainerSection
-      id="guide-section"
+      id="instructions-section"
       className="bg-fixed bg-parallax-instructions-section bg-cover flex flex-col justify-center items-center"
     >
       <Container className="py-12 text-white flex flex-col">

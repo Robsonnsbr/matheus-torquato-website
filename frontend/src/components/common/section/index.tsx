@@ -12,7 +12,6 @@ export default function ContainerSection({
 }: SectionProps) {
   return (
     <section
-      id="container-section"
       className={`relative flex min-h-[43rem] 3xl:min-h-[54rem] bg-transparent w-full } ${
         className ? className : ""
       }`}

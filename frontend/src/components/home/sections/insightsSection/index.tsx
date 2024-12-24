@@ -5,7 +5,7 @@ import LineWithVertical from "@components/svg/LineWithVertical";
 export default function InsightsSection() {
   return (
     <ContainerSection
-      id="info-section"
+      id="insights-section"
       className="bg-fixed bg-parallax-insights-section bg-cover flex flex-col justify-center items-center"
     >
       <Container className="py-12 text-white flex flex-col">
