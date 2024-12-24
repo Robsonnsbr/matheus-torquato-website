@@ -1,6 +1,6 @@
 import Container from "@components/common/containers/Container";
 import ContainerSection from "@components/common/containers/ContainerSection";
-import SvgLineWithVertical from "@components/common/svg/SvgLineWithVertical";
+import SvgLineWithVertical from "@components/common/svgs/SvgLineWithVertical";
 
 export default function InstructionsSection() {
   return (
