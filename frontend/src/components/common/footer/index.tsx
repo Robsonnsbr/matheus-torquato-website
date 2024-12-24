@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from "react";
-import Container from "@components/common/container/Container";
-import ContainerSection from "@components/common/container/ContainerSection";
+import Container from "@components/common/containers/Container";
+import ContainerSection from "@components/common/containers/ContainerSection";
 
 type FooterProps = HTMLAttributes<HTMLDivElement>;
 

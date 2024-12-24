@@ -1,5 +1,5 @@
 import React from "react";
-import ContainerMedium from "@components/common/container/Container";
+import ContainerMedium from "@components/common/containers/Container";
 import Main from "@components/common/main";
 
 function Contact() {

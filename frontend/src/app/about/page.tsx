@@ -1,6 +1,6 @@
 import React from "react";
 import Main from "@components/common/main";
-import ContainerMedium from "@components/common/container/Container";
+import ContainerMedium from "@components/common/containers/Container";
 import Header from "@components/common/header";
 import Footer from "@components/common/footer";
 

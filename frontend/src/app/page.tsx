@@ -1,6 +1,6 @@
 /* cSpell:disable */
 
-import AppContainer from "@components/common/container/AppContainer";
+import AppContainer from "@components/common/containers/AppContainer";
 // import Header from "@components/header";
 import Main from "@components/common/main";
 import Footer from "@components/common/footer";
