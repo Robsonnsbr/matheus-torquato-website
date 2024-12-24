@@ -1,6 +1,6 @@
 import React from "react";
 import ContainerSection from "@components/common/containers/ContainerSection";
-import Container from "@components/common/containers/Container";
+import Container from "@components/common/containers/ContainerContent";
 import SvgLineWithVertical from "@components/common/svgs/SvgLineWithVertical";
 import TestForm from "@components/home/sections/formSection/Form";
 import TickerPartners from "@components/home/sections/heroSection/TickerPartners";

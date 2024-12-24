@@ -2,7 +2,7 @@
 import ContainerSection from "@components/common/containers/ContainerSection";
 import Image from "next/image";
 import { logoIQWithName } from "@public/logos/index";
-import Container from "@components/common/containers/Container";
+import Container from "@components/common/containers/ContainerContent";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
 export default function HeroSection() {

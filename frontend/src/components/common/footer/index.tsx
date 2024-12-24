@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react";
-import Container from "@components/common/containers/Container";
+import Container from "@components/common/containers/ContainerContent";
 import ContainerSection from "@components/common/containers/ContainerSection";
 
 type FooterProps = HTMLAttributes<HTMLDivElement>;
@@ -9,7 +9,7 @@ const Footer = ({ ...rest }: FooterProps) => {
     <footer {...rest} className="text-whiteSnow">
       <ContainerSection
         id="footer-section"
-        className="relative flex min-h-fit !bg-blue w-full"
+        className="relative flex !min-h-fit bg-blue w-full"
       >
         <Container className="flex flex-col gap-4 py-12">
           <div className="flex flex-wrap gap-6 justify-center items-center text-white w-full">

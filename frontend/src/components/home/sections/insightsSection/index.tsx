@@ -1,4 +1,4 @@
-import Container from "@components/common/containers/Container";
+import Container from "@components/common/containers/ContainerContent";
 import ContainerSection from "@components/common/containers/ContainerSection";
 import SvgLineWithVertical from "@components/common/svgs/SvgLineWithVertical";
 

@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <AppContainer>
       <HeroSection />
-
       <Main>
         <InsightsSection />
         <InstructionsSection />
