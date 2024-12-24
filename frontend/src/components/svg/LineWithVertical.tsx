@@ -14,7 +14,7 @@ const LineWithVertical = () => {
         y1="10"
         x2="100"
         y2="10"
-        stroke="var(--color-red)"
+        stroke="var(--color-blue)"
         strokeWidth="2"
       />
       {/* Linha vertical */}
@@ -23,9 +23,23 @@ const LineWithVertical = () => {
         y1="10"
         x2="0"
         y2="50"
-        stroke="var(--color-red)"
+        stroke="var(--color-blue)"
         strokeWidth="2"
+        markerEnd="url(#red-marker)" // Define o quadrado na ponta
       />
+      {/* Definição do marcador */}
+      <defs>
+        <marker
+          id="red-marker"
+          markerWidth="4"
+          markerHeight="4"
+          refX="2"
+          refY="0.5"
+          orient="auto"
+        >
+          <rect x="0" y="0" width="4" height="4" fill="var(--color-red)" />
+        </marker>
+      </defs>
     </svg>
   );
 };

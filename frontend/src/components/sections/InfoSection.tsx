@@ -10,7 +10,7 @@ export default function InfoSection() {
     >
       <Container className="py-12 text-white flex flex-col">
         <LineWithVertical />
-        <div className="flex flex-col sm:flex-row">
+        <div className="flex flex-col sm:flex-row marker:text-red">
           <h2 className="uppercase self-center font-poppins font-extrabold text-3xl pb-8 text-center text-blue">
             Insights Estratégicos e Personalizados
           </h2>

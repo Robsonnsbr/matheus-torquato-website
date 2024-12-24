@@ -10,7 +10,7 @@ export default function GuideSection() {
     >
       <Container className="py-12 text-white flex flex-col">
         <LineWithVertical />
-        <div className="flex flex-col sm:flex-row justify-between m-auto overflow-hidden">
+        <div className="flex flex-col sm:flex-row justify-between m-auto overflow-hidden marker:text-red">
           {/* Form Submission Instructions - Colocado primeiro em telas pequenas */}
           <div className="flex w-full sm:w-1/3 p-4">
             <div className="text-center p-6 bg-blue shadow-lg w-full rounded-md">
@@ -63,7 +63,7 @@ export default function GuideSection() {
           <div className="flex w-full sm:w-1/3 p-4">
             <div className="text-center p-6 bg-blue shadow-lg w-full rounded-md">
               <h2 className="text-xl font-semibold mb-6">Form Fields</h2>
-              <ul className="text-left mt-4 ml-4 list-disc">
+              <ul className="text-left mt-4 ml-4 list-disc ">
                 <li className="mb-4">
                   Field 1: Name – Please enter your full name.
                 </li>
