@@ -1,13 +1,13 @@
 import React, { HTMLAttributes } from "react";
 import Container from "@components/common/container/Container";
-import Section from "@components/common/section/Section";
+import ContainerSection from "@components/common/section";
 
 type FooterProps = HTMLAttributes<HTMLDivElement>;
 
 const Footer = ({ ...rest }: FooterProps) => {
   return (
     <footer {...rest} className="text-whiteSnow">
-      <Section className="relative flex min-h-fit !bg-blue w-full">
+      <ContainerSection className="relative flex min-h-fit !bg-blue w-full">
         <Container className="flex flex-col gap-4 py-12">
           <div className="flex flex-wrap gap-6 justify-center items-center text-white w-full">
             <div className="space-y-10 flex-1 min-w-[200px] max-w-[300px] text-center">
@@ -97,7 +97,7 @@ const Footer = ({ ...rest }: FooterProps) => {
             <p>&copy; 2024 Empresa Exemplo. Todos os direitos reservados.</p>
           </div>
         </Container>
-      </Section>
+      </ContainerSection>
     </footer>
   );
 };

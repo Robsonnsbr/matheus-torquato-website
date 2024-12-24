@@ -1,5 +1,5 @@
 "use client";
-import Section from "@components/common/section/Section";
+import ContainerSection from "@components/common/section";
 import Image from "next/image";
 import { logoIQWithName } from "@public/logos/index";
 import Container from "@components/common/container/Container";
@@ -7,7 +7,7 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 
 export default function HeroSection() {
   return (
-    <Section
+    <ContainerSection
       id="hero-section"
       className="flex flex-col bg-fixed bg-parallax-hero-section bg-cover bg-right-bottom"
     >
@@ -102,6 +102,6 @@ export default function HeroSection() {
           </ul>
         </div>
       </Container>
-    </Section>
+    </ContainerSection>
   );
 }

@@ -1,10 +1,10 @@
 import Container from "@components/common/container/Container";
-import Section from "@components/common/section/Section";
+import ContainerSection from "@components/common/section";
 import LineWithVertical from "@components/svg/LineWithVertical";
 
 export default function InsightsSection() {
   return (
-    <Section
+    <ContainerSection
       id="info-section"
       className="bg-fixed bg-parallax-insights-section bg-cover flex flex-col justify-center items-center"
     >
@@ -74,6 +74,6 @@ export default function InsightsSection() {
           </div>
         </div>
       </Container>
-    </Section>
+    </ContainerSection>
   );
 }
