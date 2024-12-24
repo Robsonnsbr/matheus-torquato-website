@@ -1,38 +1,43 @@
+/* cSpell:disable */
 "use client";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import standardPoors from "@public/partners/Standard&Poors.svg.png";
-import tttt from "@public/partners/Tullett-Prebon-logo.webp";
-import moody from "@public/partners/pngegg.png";
-import logo2 from "@public/partners/logo@2x.png";
-import pngwing from "@public/partners/pngwing.com.png";
-import afma from "@public/partners/website_afma_web.png";
+import {
+  standardp,
+  tullett,
+  moodys,
+  barchart,
+  barclays,
+  afma,
+  spGlobal,
+} from "@public/logos";
 
 export default function TickerPartners() {
   const images = [
-    moody,
-    logo2,
-    pngwing,
+    spGlobal,
+    moodys,
+    barchart,
+    barclays,
     afma,
-    standardPoors,
-    tttt,
-    moody,
-    logo2,
-    pngwing,
+    standardp,
+    tullett,
+    spGlobal,
+    moodys,
+    barchart,
+    barclays,
     afma,
-    standardPoors,
-    tttt,
-    moody,
-    logo2,
-    pngwing,
+    standardp,
+    tullett,
+    spGlobal,
+    moodys,
+    barchart,
+    barclays,
     afma,
-    standardPoors,
-    tttt,
-    moody,
-    logo2,
-    pngwing,
-    afma,
+    standardp,
+    tullett,
+    spGlobal,
+    moodys,
   ];
 
   return (

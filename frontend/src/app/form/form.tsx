@@ -52,7 +52,7 @@ const TestForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col h-full sm:w-1/2 font-raleway  space-y-4 bg-parallax-background_form bg-contain p-4 m-5  rounded-md shadow-md"
+      className="flex flex-col h-full sm:w-1/2 font-raleway  space-y-4 bg-background-form bg-contain p-4 m-5  rounded-md shadow-md"
     >
       <span className="text-center text-xl font-bold">
         FORMULÁRIO PARA PESQUISA DE DADOS

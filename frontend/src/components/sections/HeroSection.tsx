@@ -1,7 +1,7 @@
 "use client";
 import Section from "@components/common/Section";
 import Image from "next/image";
-import logoIqfinancialsLarge from "@public/images/logo_name_iqfinancials_large.png";
+import { logoIQWithName } from "@public/logos/index";
 import Container from "@components/common/container/Container";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <Section
       id="hero-section"
-      className="flex flex-col bg-fixed bg-parallax-background_12 bg-cover bg-right-bottom"
+      className="flex flex-col bg-fixed bg-parallax-hero-section bg-cover bg-right-bottom"
     >
       <Container className="h-full flex flex-col">
         {/* Cabeçalho centralizado */}
@@ -20,7 +20,7 @@ export default function HeroSection() {
               {/* <SvgLogoComponent aria-hidden="true" width={50} height={40} /> */}
               <Image
                 alt="logo iq financials"
-                src={logoIqfinancialsLarge}
+                src={logoIQWithName}
                 height={100}
                 width={500}
                 className="sm:pt-20"

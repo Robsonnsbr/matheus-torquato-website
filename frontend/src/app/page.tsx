@@ -6,8 +6,8 @@ import HeroSection from "@components/sections/HeroSection";
 import Main from "@components/common/Main";
 import Section from "../components/common/Section";
 import Footer from "@components/footer";
-import InfoSection from "@components/sections/InfoSection";
-import GuideSection from "@components/sections/GuideSection";
+import InsightsSection from "@components/sections/InsightsSection";
+import InstructionsSection from "@components/sections/InstructionsSection";
 import TestForm from "./form/form";
 import Container from "@components/common/container/Container";
 import TickerPartners from "@components/home/TickerPartners";
@@ -20,9 +20,9 @@ export default function Home() {
       <HeroSection />
 
       <Main>
-        <InfoSection />
-        <GuideSection />
-        <Section className="bg-fixed  bg-parallax-background_16 bg-cover flex flex-col justify-between">
+        <InsightsSection />
+        <InstructionsSection />
+        <Section className="bg-fixed  bg-parallax-form-section bg-cover flex flex-col justify-between">
           <Container className="flex flex-col">
             <LineWithVertical />
             <div className="flex flex-col w-full justify-center items-center ">
