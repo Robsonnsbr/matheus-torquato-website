@@ -1,5 +1,5 @@
 "use client";
-import ContainerSection from "@components/common/section";
+import ContainerSection from "@components/common/container/ContainerSection";
 import Image from "next/image";
 import { logoIQWithName } from "@public/logos/index";
 import Container from "@components/common/container/Container";

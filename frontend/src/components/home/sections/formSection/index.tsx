@@ -1,5 +1,5 @@
 import React from "react";
-import ContainerSection from "@components/common/section";
+import ContainerSection from "@components/common/container/ContainerSection";
 import Container from "@components/common/container/Container";
 import SvgLineWithVertical from "@components/common/svg/SvgLineWithVertical";
 import TestForm from "@components/home/sections/formSection/Form";
