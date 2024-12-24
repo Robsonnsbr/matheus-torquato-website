@@ -1,6 +1,6 @@
 import Container from "@components/common/container/Container";
 import ContainerSection from "@components/common/section";
-import LineWithVertical from "@components/svg/LineWithVertical";
+import SvgLineWithVertical from "@components/common/svg/SvgLineWithVertical";
 
 export default function InsightsSection() {
   return (
@@ -9,7 +9,7 @@ export default function InsightsSection() {
       className="bg-fixed bg-parallax-insights-section bg-cover flex flex-col justify-center items-center"
     >
       <Container className="py-12 text-white flex flex-col">
-        <LineWithVertical />
+        <SvgLineWithVertical />
         <div className="flex flex-col sm:flex-row marker:text-red">
           <h2 className="uppercase self-center font-poppins font-extrabold text-3xl pb-8 text-center text-blue">
             Insights Estratégicos e Personalizados

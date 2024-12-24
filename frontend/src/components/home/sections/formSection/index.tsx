@@ -1,7 +1,7 @@
 import React from "react";
 import ContainerSection from "@components/common/section";
 import Container from "@components/common/container/Container";
-import LineWithVertical from "@components/svg/LineWithVertical";
+import SvgLineWithVertical from "@components/common/svg/SvgLineWithVertical";
 import TestForm from "@components/home/sections/formSection/Form";
 import TickerPartners from "@components/home/sections/heroSection/TickerPartners";
 
@@ -12,7 +12,7 @@ export default function FormSection() {
       className="bg-fixed bg-parallax-form-section bg-cover flex flex-col justify-between"
     >
       <Container className="flex flex-col">
-        <LineWithVertical />
+        <SvgLineWithVertical />
         <div className="flex flex-col w-full justify-center items-center">
           <TestForm />
         </div>

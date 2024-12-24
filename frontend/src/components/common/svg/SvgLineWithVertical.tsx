@@ -1,6 +1,6 @@
 import React from "react";
 
-const LineWithVertical = () => {
+const SvgLineWithVertical = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -44,4 +44,4 @@ const LineWithVertical = () => {
   );
 };
 
-export default LineWithVertical;
+export default SvgLineWithVertical;

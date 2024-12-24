@@ -1,6 +1,6 @@
 import Container from "@components/common/container/Container";
 import ContainerSection from "@components/common/section";
-import LineWithVertical from "@components/svg/LineWithVertical";
+import SvgLineWithVertical from "@components/common/svg/SvgLineWithVertical";
 
 export default function InstructionsSection() {
   return (
@@ -9,7 +9,7 @@ export default function InstructionsSection() {
       className="bg-fixed bg-parallax-instructions-section bg-cover flex flex-col justify-center items-center"
     >
       <Container className="py-12 text-white flex flex-col">
-        <LineWithVertical />
+        <SvgLineWithVertical />
         <div className="flex flex-col sm:flex-row justify-between m-auto overflow-hidden marker:text-red">
           {/* Form Submission Instructions - Colocado primeiro em telas pequenas */}
           <div className="flex w-full sm:w-1/3 p-4">
