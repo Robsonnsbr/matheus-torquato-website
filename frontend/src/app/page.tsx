@@ -2,17 +2,14 @@
 
 import AppContainer from "@components/common/container/AppContainer";
 // import Header from "@components/header";
-import HeroSection from "@components/sections/HeroSection";
-import Main from "@components/common/Main";
-import Section from "../components/common/Section";
-import Footer from "@components/footer";
-import InsightsSection from "@components/sections/InsightsSection";
-import InstructionsSection from "@components/sections/InstructionsSection";
-import TestForm from "./form/form";
-import Container from "@components/common/container/Container";
-import TickerPartners from "@components/home/TickerPartners";
-import LineWithVertical from "@components/svg/LineWithVertical";
-// import TestForm from "./form/form";
+import Main from "@components/common/main";
+import Footer from "@components/common/footer";
+import {
+  HeroSection,
+  InsightsSection,
+  InstructionsSection,
+  FormSection,
+} from "@components/home/index";
 
 export default function Home() {
   return (
@@ -22,20 +19,7 @@ export default function Home() {
       <Main>
         <InsightsSection />
         <InstructionsSection />
-        <Section className="bg-fixed  bg-parallax-form-section bg-cover flex flex-col justify-between">
-          <Container className="flex flex-col">
-            <LineWithVertical />
-            <div className="flex flex-col w-full justify-center items-center ">
-              <TestForm />
-            </div>
-          </Container>
-          <div
-            id="ticker-wrapper-hero-section"
-            className="w-full h-fit my-2 self-end"
-          >
-            <TickerPartners />
-          </div>
-        </Section>
+        <FormSection />
       </Main>
       <Footer />
     </AppContainer>
@@ -45,3 +29,4 @@ export default function Home() {
 //TODO: AJUSTAR TODO padding da section, talvez seja necessário cria um container dentro, padding left e right.
 //TODO: as cores estão com conflito no tailwind, analisar, comportamento: aplica e desaplica sozinha.(talvez seja a apenas sobrepor com !important)
 //TODO: ajustar size do layout para resoluções maiores.
+//TODO: Ajustar css global, existem cfg que não são necessárias

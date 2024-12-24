@@ -1,5 +1,5 @@
 import Container from "@components/common/container/Container";
-import Section from "@components/common/Section";
+import Section from "@components/common/section/Section";
 import LineWithVertical from "@components/svg/LineWithVertical";
 
 export default function InsightsSection() {

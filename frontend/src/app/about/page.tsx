@@ -1,8 +1,8 @@
 import React from "react";
-import Main from "@components/common/Main";
+import Main from "@components/common/main";
 import ContainerMedium from "@components/common/container/Container";
-import Header from "@components/header";
-import Footer from "@components/footer";
+import Header from "@components/common/header";
+import Footer from "@components/common/footer";
 
 function About() {
   return (
