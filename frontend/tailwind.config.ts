@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "3xl": "1920px", // Custom breakpoint para 1920px
+      },
+
       fontFamily: {
         raleway: ["var(--font-raleway)"],
         openSans: ["var(--font-open-sans)"],
