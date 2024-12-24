@@ -41,6 +41,7 @@ export default {
         "parallax-background_insides": 'url("/images/background_insides.jpg")',
         "parallax-background_15": 'url("/images/background_15.jpg")',
         "parallax-background_16": 'url("/images/background_16.jpg")',
+        "parallax-background_form": 'url("/images/background_form.jpg")',
       },
     },
   },

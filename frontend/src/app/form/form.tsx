@@ -52,13 +52,13 @@ const TestForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col h-full sm:w-1/2 space-y-4 bg-light p-4 m-5 font-serif rounded-md shadow-md"
+      className="flex flex-col h-full sm:w-1/2 font-raleway  space-y-4 bg-parallax-background_form bg-contain p-4 m-5  rounded-md shadow-md"
     >
       <span className="text-center text-xl font-bold">
         FORMULÁRIO PARA PESQUISA DE DADOS
       </span>
       <div className="flex flex-col space-y-2">
-        <label htmlFor="nome" className="text-sm font-medium text-dark">
+        <label htmlFor="nome" className="text-sm font-medium   text-dark">
           Nome
         </label>
         <input
