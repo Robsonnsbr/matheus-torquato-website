@@ -8,8 +8,8 @@ import AppProviders from "@contexts/index";
 import WppButton from "@components/common/button/WppButton";
 
 export const metadata: Metadata = {
-  title: "Matheus Website",
-  description: "WebSite Matheus",
+  title: "Financials",
+  description: "IQ financials web",
 };
 
 export default function RootLayout({
