@@ -3,18 +3,16 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   try {
     const payload = await req.json(); // Lê o corpo JSON da requisição
-    console.log(payload); // Exibe os dados no console
+    console.log(payload); // Exibe o payload no console
 
-    // Retorna uma resposta JSON
     return NextResponse.json(
-      { message: "Dados recebidos com sucesso!" },
+      { message: "Requisição POST recebida com sucesso!" },
       { status: 200 }
     );
   } catch (error) {
-    // Caso ocorra algum erro, retorna uma resposta de erro
     console.log(error);
     return NextResponse.json(
-      { error: "Erro ao processar os dados" },
+      { error: "Erro ao processar a requisição" },
       { status: 500 }
     );
   }
