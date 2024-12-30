@@ -1,7 +1,8 @@
-// import { EmailTemplate } from "@components/email-templates/EmailTemplate";
-import { validateRecaptcha } from "@components/home/components/form-block/validateRecaptcha";
 import { useState, useMemo } from "react";
-// import ReactDOMServer from "react-dom/server"; // Para renderizar JSX para HTML
+
+import { EmailTemplate } from "@components/email-templates/EmailTemplate";
+import { validateRecaptcha } from "@services/validateRecaptcha";
+import ReactDOMServer from "react-dom/server";
 
 import {
   FormData,
@@ -192,80 +193,51 @@ export function useSearchForm() {
     });
   };
 
-  // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-  //   setIsSubmitting(true);
-
-  //   try {
-  //     // Renderiza o JSX para HTML
-  //     const emailContent = ReactDOMServer.renderToStaticMarkup(
-  //       <EmailTemplate formData={formData} />
-  //     );
-
-  //     // Envia os dados para a API com HTML gerado
-  //     const res = await fetch("/api/send-email", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         content: emailContent, // Envia o HTML gerado, não o JSX
-  //         subject: "Pesquisa", // Assunto do email
-  //       }),
-  //     });
-
-  //     if (res.ok) {
-  //       alert("Email enviado com sucesso!");
-  //     } else {
-  //       alert("Falha ao enviar o email");
-  //     }
-
-  //     resetFormData();
-  //   } catch (error: unknown) {
-  //     if (error instanceof Error) {
-  //       console.error(error.message);
-  //     } else {
-  //       console.error("Erro desconhecido", error);
-  //     }
-  //   } finally {
-  //     setIsSubmitting(false);
-  //   }
-  // };
-
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setIsSubmitting(true); // Indica que o envio começou
+    setIsSubmitting(true);
 
     try {
-      // Valida o reCAPTCHA antes de prosseguir
       const isValid = await validateRecaptcha();
       if (!isValid) {
+        //se o reCAPTCHA falhar, interrompe o envio.
+        // (TODO: verificar se o reCAPTCHA pode estar fora do ar, nesse caso, o envio devera ocorrer)
         alert("Falha na validação do reCAPTCHA. Tente novamente.");
-        return; // Se o reCAPTCHA falhar, interrompe o envio
+        return;
       }
 
-      // Simula um atraso de 3 segundos para mock do envio de email
-      await new Promise((resolve) => setTimeout(resolve, 3000));
+      // Renderiza o JSX para HTML
+      const emailContent = ReactDOMServer.renderToStaticMarkup(
+        <EmailTemplate formData={formData} />
+      );
 
-      // Mock de resposta simulada (altere para 'ok: false' para simular falha)
-      const mockResponse = { ok: true };
+      // Envia os dados para a API com HTML gerado
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          content: emailContent, // Envia o HTML gerado, não o JSX
+          subject: "Pesquisa", // Assunto do email
+        }),
+      });
 
-      // Simula a resposta da API com o mock
-      if (mockResponse.ok) {
-        alert("Simulação: Email enviado com sucesso!!!");
+      if (res.ok) {
+        alert("Email enviado com sucesso!");
       } else {
-        alert("Simulação: Falha ao enviar o email");
+        alert("Falha ao enviar o email");
       }
 
-      resetFormData(); // Reseta os dados do formulário
+      resetFormData();
     } catch (error: unknown) {
       if (error instanceof Error) {
-        console.error("Erro ao enviar o formulário:", error.message);
+        console.error(error.message);
       } else {
-        console.error("Erro desconhecido:", error);
+        console.error("Erro desconhecido", error);
       }
     } finally {
-      setIsSubmitting(false); // Finaliza o processo de envio
+      setIsSubmitting(false);
     }
   };
 

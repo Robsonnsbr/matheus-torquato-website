@@ -27,47 +27,12 @@ export default function SearchForm() {
     handleSubmit,
   } = useSearchForm();
 
-  // const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "";
-
-  // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-
-  //   try {
-  //     // Carrega o reCAPTCHA e executa uma ação
-  //     const recaptcha = await load(siteKey);
-  //     const token = await recaptcha.execute("submit");
-
-  //     // Envia o token para a API de validação do reCAPTCHA
-  //     const response = await fetch("/api/verify-captcha", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({ token }), // Envia o token para validação no back-end
-  //     });
-
-  //     // Verifica a resposta da API
-  //     const data = await response.json();
-
-  //     if (data.success) {
-  //       // Se a validação for bem-sucedida, envie o formulário
-  //       // Coloque aqui o código para enviar o formulário, como enviar o email
-  //       alert("Formulário enviado com sucesso!");
-  //     } else {
-  //       // Caso contrário, exibe um erro
-  //       alert("Falha na validação do reCAPTCHA. Tente novamente.");
-  //     }
-  //   } catch (error) {
-  //     console.error("Erro ao processar o reCAPTCHA:", error);
-  //     alert("Ocorreu um erro ao validar o reCAPTCHA.");
-  //   }
-  // };
-
   return (
     <>
+      {/* TODO: Ajustar */}
       {/* //MOCKING */}
-      <SubmittingOverlay isSubmitting={isSubmitting} />{" "}
       {/* Overlay de bloqueio */}
+      <SubmittingOverlay isSubmitting={isSubmitting} />
       {/* //MOCKING */}
       <form
         onSubmit={handleSubmit}
@@ -374,7 +339,6 @@ export default function SearchForm() {
             onChange={handleChange}
           />
         </Label>
-        {/* TODO: add ReCAPTCHA v3 */}
 
         <div className="w-full flex flex-col sm:flex-row gap-2 justify-end mt-4">
           <Label className="flex items-center gap-2 text-red font-semibold bg-black/50 p-2 rounded-md cursor-pointer">
