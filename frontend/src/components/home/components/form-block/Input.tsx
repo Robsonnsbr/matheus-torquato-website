@@ -4,7 +4,7 @@ type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
 const Input = (props: InputProps) => {
   return (
     <input
-      // required
+      required
       className="min-h-10 shadow-md px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
       {...props}
     />

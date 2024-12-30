@@ -7,7 +7,7 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
 const Select = ({ options, ...rest }: SelectProps) => {
   return (
     <select
-      // required
+      required
       {...rest}
       className="min-h-10 shadow-md px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
     >
