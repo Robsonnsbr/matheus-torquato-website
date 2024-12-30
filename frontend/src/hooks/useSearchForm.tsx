@@ -1,9 +1,9 @@
 import { useState, useMemo } from "react";
 
-import { EmailTemplate } from "@components/email-templates/EmailTemplate";
-import { validateRecaptcha } from "@services/validateRecaptcha";
 import ReactDOMServer from "react-dom/server";
+import { validateRecaptcha } from "@services/validateRecaptcha";
 
+import { EmailTemplate } from "@components/email-templates/EmailTemplate";
 import {
   FormData,
   Section,
