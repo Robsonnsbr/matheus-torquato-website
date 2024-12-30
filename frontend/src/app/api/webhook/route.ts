@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { NextApiResponse } from "next";
 import twilio from "twilio";
 
 // Obter as credenciais do Twilio e números de WhatsApp do arquivo .env
@@ -9,7 +10,12 @@ const toPhone = process.env.MY_WHATSAPP_NUMBER!;
 
 const client = twilio(accountSid, authToken);
 
-export async function POST(req: NextRequest) {
+export async function POST(req: NextRequest, res: NextApiResponse) {
+  if (req.method === "POST") {
+    const payload = req.body;
+    console.log(payload);
+    res.status(200);
+  }
   try {
     // Extrair dados do corpo da requisição
     const emailData = await req.json();
