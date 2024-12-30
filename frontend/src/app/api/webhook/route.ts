@@ -50,3 +50,10 @@ export async function POST(req: NextRequest) {
     );
   }
 }
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export async function GET(req: NextRequest) {
+  return NextResponse.json({
+    message: "Olá, esta é uma resposta simples do GET!",
+  });
+}
