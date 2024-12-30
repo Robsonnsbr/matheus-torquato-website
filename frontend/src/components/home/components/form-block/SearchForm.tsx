@@ -91,6 +91,7 @@ export default function SearchForm() {
               id="finalidade"
               name="finalidade"
               options={sortedListPurpose}
+              value={formData.finalidade}
               onChange={handleChange}
             />
           </Label>
