@@ -11,7 +11,7 @@ const Footer = ({ ...rest }: FooterProps) => {
         id="footer-section"
         className="relative flex !min-h-fit bg-blue w-full"
       >
-        <Container className="flex flex-col gap-4 py-12">
+        <Container className="flex flex-col py-9 gap-9">
           <div className="flex flex-wrap gap-6 justify-center items-center text-white w-full">
             <div className="space-y-10 flex-1 min-w-[200px] max-w-[300px] text-center">
               <h2 className="font-semibold text-lg">Sobre Nós</h2>
@@ -81,23 +81,46 @@ const Footer = ({ ...rest }: FooterProps) => {
               <ul>
                 <li>
                   <a
-                    href="mailto:contato@empresa.com"
+                    href="mailto:financialsiq@gmail.com"
                     className="hover:text-accent"
                   >
-                    contato@empresa.com
+                    financialsiq@gmail.com
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+5511999999999" className="hover:text-accent">
-                    (11) 99999-9999
+                  <a href="tel:+554199539-8000" className="hover:text-accent">
+                    (41) 99539-8000
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          {/* Copyright */}
-          <div className="mt-6 text-center text-white text-sm">
-            <p>&copy; 2024 Empresa Exemplo. Todos os direitos reservados.</p>
+          <div className="flex flex-col my-2 gap-2 text-center text-white text-sm">
+            <p>
+              &copy;Copyright 2024 <strong>IQ Financials</strong>. Todos os
+              direitos reservados.
+            </p>
+            <p className="text-center text-white ">
+              Este site é protegido pelo reCAPTCHA e está sujeito à{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Política de Privacidade
+              </a>{" "}
+              e aos{" "}
+              <a
+                href="https://policies.google.com/terms"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Termos de Serviço
+              </a>{" "}
+              do Google.
+            </p>
           </div>
         </Container>
       </ContainerSection>
