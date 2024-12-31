@@ -102,8 +102,7 @@ const Footer = ({ ...rest }: FooterProps) => {
           </div>
           <div className="flex flex-col my-2 gap-2 text-center text-white text-sm">
             <p>
-              &copy;Copyright 2024{" "}
-              <strong className="text-red">IQ Financials.</strong> Todos os
+              &copy;Copyright 2024 <strong>IQ Financials.</strong> Todos os
               direitos reservados.
             </p>
             <p className="text-center text-white ">
