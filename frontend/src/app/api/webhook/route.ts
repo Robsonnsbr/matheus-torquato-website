@@ -14,8 +14,6 @@ export async function POST(req: NextRequest) {
   try {
     // Extrair dados do corpo da requisição
     const emailData = await req.json();
-    const payload = await req.json(); // Lê o corpo JSON da requisição
-    console.log(payload); // Exibe os dados no console
 
     // Verificar se os dados necessários estão presentes
     if (!emailData.subject || !emailData.from || !emailData.to) {
