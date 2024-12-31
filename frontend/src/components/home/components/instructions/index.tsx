@@ -3,11 +3,11 @@ import SvgLine from "@components/common/svgs/SvgLine";
 
 export default function Instructions() {
   return (
-    <ContentContainer className="py-12 text-white flex flex-col">
+    <ContentContainer className="flex flex-col py-12 overflow-hidden 3xl:scale-105">
       <SvgLine align="right" />
-      <div className="flex flex-col sm:flex-row justify-between m-auto overflow-hidden marker:text-red">
+      <div className="flex flex-wrap text-white marker:text-red">
         {/* Form Submission Instructions - Colocado primeiro em telas pequenas */}
-        <div className="flex w-full sm:w-1/3 p-4">
+        <div className="flex w-full sm:w-1/4 py-4 sm:p-2">
           <div className="text-center p-6 bg-blue shadow-lg w-full rounded-md">
             <h2 className="text-xl font-semibold mb-6">
               Form Submission Instructions
@@ -30,7 +30,7 @@ export default function Instructions() {
         </div>
 
         {/* Instructions for Form Use */}
-        <div className="flex w-full sm:w-1/3 p-4">
+        <div className="flex w-full sm:w-1/4 py-4 sm:p-2">
           <div className="text-center p-6 bg-blue shadow-lg w-full rounded-md">
             <h2 className="text-xl font-semibold mb-6">
               Instructions for Form Use
@@ -54,10 +54,10 @@ export default function Instructions() {
         </div>
 
         {/* Form Fields */}
-        <div className="flex w-full sm:w-1/3 p-4">
+        <div className="flex w-full sm:w-1/4 py-4 sm:p-2">
           <div className="text-center p-6 bg-blue shadow-lg w-full rounded-md">
             <h2 className="text-xl font-semibold mb-6">Form Fields</h2>
-            <ul className="text-left mt-4 ml-4 list-disc ">
+            <ul className="text-left mt-4 ml-4 list-disc">
               <li className="mb-4">
                 Field 1: Name – Please enter your full name.
               </li>
@@ -75,8 +75,10 @@ export default function Instructions() {
             </ul>
           </div>
         </div>
-        <div className="flex w-full sm:w-1/3 items-center order-first sm:order-last">
-          <h2 className="uppercase font-poppins font-extrabold text-3xl text-center text-blue">
+
+        {/* Title */}
+        <div className="flex w-full sm:w-1/4 py-4 sm:p-2">
+          <h2 className="uppercase self-center font-poppins font-extrabold text-3xl text-center text-blue">
             guia de preenchimento do formulário
           </h2>
         </div>
