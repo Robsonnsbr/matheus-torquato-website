@@ -10,7 +10,7 @@ export default function FormBlock() {
       className="flex flex-col"
       id="search-form-block-container"
     >
-      <SvgLine />
+      <SvgLine className="mt-9" />
       <div className="flex flex-col w-full justify-center items-center">
         <Form />
       </div>

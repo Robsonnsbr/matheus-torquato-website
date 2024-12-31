@@ -1,6 +1,6 @@
 import React from "react";
 
-const SvgLine = ({ align = "left" }) => {
+const SvgLine = ({ align = "left", className = "" }) => {
   const xPosition = align === "right" ? 100 : 0;
 
   return (
@@ -8,7 +8,7 @@ const SvgLine = ({ align = "left" }) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 60"
       preserveAspectRatio="none"
-      style={{ width: "100%", height: "60px" }}
+      className={`h-16 w-auto ${className}`}
     >
       <line
         x1="0"
