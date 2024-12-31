@@ -2,7 +2,7 @@
 import React from "react";
 import ContentContainer from "@components/common/containers/ContentContainer";
 import SvgLine from "@components/common/svgs/SvgLine";
-import Form from "@components/home/components/form-block/SearchForm";
+import Form from "@components/home/components/form-block/components/SearchForm";
 
 export default function FormBlock() {
   return (

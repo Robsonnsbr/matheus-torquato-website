@@ -29,11 +29,7 @@ export default function SearchForm() {
 
   return (
     <>
-      {/* TODO: Ajustar */}
-      {/* //MOCKING */}
-      {/* Overlay de bloqueio */}
       <SubmittingOverlay isSubmitting={isSubmitting} />
-      {/* //MOCKING */}
       <form
         onSubmit={handleSubmit}
         className="relative flex flex-col font-medium gap-4 p-4 rounded-md w-full bg-background-form bg-contain m-2 shadow-md"
@@ -41,13 +37,13 @@ export default function SearchForm() {
         <Image
           alt="logo iq financials blue"
           src={logoIQNameblue}
-          height={80}
-          width={80}
+          height={100}
+          width={100}
           style={{ height: "auto", width: "auto" }}
-          className="hidden sm:block absolute right-4 top-4"
+          className="absolute right-1/2 translate-x-1/2 sm:translate-x-0 sm:right-4 top-4"
         />
 
-        <h3 className="w-full text-center font-semibold text-base sm:text-lg">
+        <h3 className="w-full text-center font-semibold text-base sm:text-lg pt-9 sm:pt-0">
           FORMULÁRIO PARA PESQUISA DE DADOS
         </h3>
 
