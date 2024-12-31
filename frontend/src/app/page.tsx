@@ -51,7 +51,4 @@ export default function Home() {
   );
 }
 
-//TODO: AJUSTAR TODO padding da section, talvez seja necessário cria um container dentro, padding left e right.
-//TODO: as cores estão com conflito no tailwind, analisar, comportamento: aplica e desaplica sozinha.(talvez seja a apenas sobrepor com !important)
-//TODO: ajustar size do layout para resoluções maiores.
 //TODO: Ajustar css global, existem cfg que não são necessárias
