@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
 
     // Montar a mensagem para o WhatsApp
     const mensagemWhatsApp = `📧 Novo e-mail recebido!
-    - Assunto: ${emailData.subject || "Sem assunto"}
+    - Assunto: ${emailData.subject || "Sem assunto"} 
     - De: ${emailData.from || "Desconhecido"}
     - Para: ${emailData.to || "Indefinido"}`;
 
