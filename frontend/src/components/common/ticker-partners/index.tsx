@@ -43,7 +43,7 @@ export default function TickerPartners() {
   return (
     <div
       id="ticker-container"
-      className="relative !overflow-hidden w-full my-2 bg-none flex items-center"
+      className="relative !overflow-hidden w-full h-fit my-2 bg-none flex items-center"
     >
       <motion.div
         id="ticker-component"
@@ -59,9 +59,9 @@ export default function TickerPartners() {
           <Image
             key={index}
             alt={`image ${index}`}
-            width={120}
-            height={50}
-            style={{ height: "auto", width: "auto" }}
+            width={400}
+            height={400}
+            style={{ height: "3rem", width: "auto" }}
             className="z-20"
             src={src}
           />
