@@ -41,16 +41,7 @@ export function useSearchForm() {
         frequencia: "",
       },
     ],
-    secondaryValues: [
-      {
-        variavel: "",
-        dataInicio: "",
-        dataFim: "",
-        regioes: [""],
-        justificativa: "",
-        frequencia: "",
-      },
-    ],
+    secondaryValues: [],
   });
   //MOCKING
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -156,10 +147,16 @@ export function useSearchForm() {
   };
 
   const handleRemoveVariable = (section: Section, index: number) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      [section]: prevData[section].filter((_, idx) => idx !== index),
-    }));
+    setFormData((prevData) => {
+      if (section === "mainValues" && prevData["mainValues"].length <= 1) {
+        return prevData;
+      }
+
+      return {
+        ...prevData,
+        [section]: prevData[section].filter((_, idx) => idx !== index),
+      };
+    });
   };
 
   const resetFormData = () => {

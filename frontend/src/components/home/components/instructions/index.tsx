@@ -76,8 +76,7 @@ export default function Instructions() {
           </div>
         </div>
 
-        {/* Title */}
-        <div className="flex w-full sm:w-1/4 py-4 sm:p-2">
+        <div className="flex w-full sm:w-1/4 py-4 sm:p-2 order-first sm:order-none">
           <h2 className="uppercase self-center font-poppins font-extrabold text-3xl text-center text-blue">
             guia de preenchimento do formulário
           </h2>
