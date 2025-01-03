@@ -11,13 +11,13 @@ import { useSearchForm } from "@hooks/useSearchForm";
 import TextArea from "./TextArea";
 import Button from "./button";
 import SubmittingOverlay from "./SubmittingOverlay";
+import { listDataType, listFrequency } from "src/types/formType";
 
 export default function SearchForm() {
   const {
     formData,
     sortedListCountries,
     sortedListPurpose,
-    listFrequency,
     isSubmitting,
     handleChange,
     handleAddVariable,
@@ -338,6 +338,27 @@ export default function SearchForm() {
         </Label>
 
         <div className="w-full flex flex-col sm:flex-row gap-2 justify-end mt-4">
+          <Label className="flex flex-wrap items-center gap-2">
+            Tipo
+            <Select
+              id="dataType"
+              name="dataType"
+              options={listDataType}
+              value={formData.dataType}
+              onChange={handleChange}
+            />
+            {formData.dataType === "Outros" && (
+              <Input
+                required={true}
+                type="text"
+                id="customDataType"
+                name="customDataType"
+                value={formData.customDataType}
+                onChange={handleChange}
+              />
+            )}
+          </Label>
+
           <Label className="flex items-center gap-2 text-red font-semibold bg-black/50 p-2 rounded-md cursor-pointer">
             URGENTE
             <Input

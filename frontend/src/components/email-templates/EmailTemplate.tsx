@@ -11,6 +11,8 @@ export const EmailTemplate = ({ formData }: Readonly<EmailTemplateProps>) => {
     whatsappEmail,
     instituicao,
     finalidade,
+    dataType,
+    customDataType,
     obsGeral,
     urgente,
     mainValues,
@@ -74,6 +76,10 @@ export const EmailTemplate = ({ formData }: Readonly<EmailTemplateProps>) => {
               Observações Gerais:
             </td>
             <td className="border px-4 py-2">{obsGeral}</td>
+          </tr>
+          <tr>
+            <td className="border px-4 py-2 font-semibold">Tipo dos dados:</td>
+            <td className="border px-4 py-2">{dataType || customDataType}</td>
           </tr>
           <tr>
             <td className="border px-4 py-2 font-semibold">Urgente:</td>

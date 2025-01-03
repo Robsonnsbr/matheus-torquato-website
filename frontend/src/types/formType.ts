@@ -14,6 +14,8 @@ export type FormData = {
   whatsappEmail: string;
   instituicao: string;
   finalidade: string;
+  dataType: string;
+  customDataType: string;
   obsGeral: string;
   urgente: boolean;
   mainValues: Variavel[];
@@ -52,6 +54,7 @@ export const listPurpose = [
   "Investimentos",
   "Gestão Financeira",
 ];
+export const listDataType = ["Excel", "DTA", "PYTHON", "Outros"];
 
 export const listFrequency = [
   "Diário",

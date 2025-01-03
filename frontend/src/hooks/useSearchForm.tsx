@@ -9,7 +9,6 @@ import {
   Section,
   listCountries,
   listPurpose,
-  listFrequency,
 } from "src/types/formType";
 
 export function useSearchForm() {
@@ -30,6 +29,8 @@ export function useSearchForm() {
     whatsappEmail: "",
     instituicao: "",
     finalidade: "",
+    dataType: "",
+    customDataType: "",
     urgente: false,
     mainValues: [
       {
@@ -43,6 +44,7 @@ export function useSearchForm() {
     ],
     secondaryValues: [],
   });
+
   //MOCKING
   const [isSubmitting, setIsSubmitting] = useState(false);
   //MOCKING
@@ -166,6 +168,8 @@ export function useSearchForm() {
       whatsappEmail: "",
       instituicao: "",
       finalidade: "",
+      dataType: "",
+      customDataType: "",
       urgente: false,
       mainValues: [
         {
@@ -242,7 +246,6 @@ export function useSearchForm() {
     formData,
     sortedListCountries,
     sortedListPurpose,
-    listFrequency,
     isSubmitting,
     handleChange,
     handleAddVariable,
